@@ -1,0 +1,1035 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:e254e97b-cdfe-440c-9069-b076ceee8d4f(com.hlag.mpsstandalone.workflow.domain)">
+  <persistence version="9" />
+  <languages />
+  <imports>
+    <import index="w2cr" ref="r:77b8edcd-5db4-4e28-899f-c6da26b5e2d4(com.hlag.entitylang.generator.template.main@generator)" implicit="true" />
+  </imports>
+  <registry>
+    <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
+      <concept id="9032177546942789835" name="jetbrains.mps.lang.generator.structure.TrivialModelId" flags="ng" index="2$$0lk">
+        <property id="9032177546942789839" name="modelName" index="2$$0lg" />
+      </concept>
+      <concept id="9032177546941420365" name="jetbrains.mps.lang.generator.structure.ExportEntry" flags="ng" index="2$UQVi">
+        <reference id="9032177546941634307" name="label" index="2$VUEs" />
+        <child id="9032177546942803148" name="outputModel" index="2$$55j" />
+        <child id="9032177546941575212" name="dataKeeper" index="2$VCQN" />
+        <child id="9032177546941575209" name="outputNode" index="2$VCQQ" />
+        <child id="9032177546941575207" name="inputNode" index="2$VCQS" />
+      </concept>
+      <concept id="9032177546941580387" name="jetbrains.mps.lang.generator.structure.TrivialNodeId" flags="ng" index="2$VJBW">
+        <property id="9032177546941580392" name="nodeId" index="2$VJBR" />
+        <property id="9032177546941580390" name="conceptId" index="2$VJBT" />
+      </concept>
+    </language>
+    <language id="5f362b6a-7593-4d33-922a-7554535c0063" name="com.hlag.entitylang">
+      <concept id="4161610248909487979" name="com.hlag.entitylang.structure.Field2ClassKeeper" flags="ng" index="3q7JOj">
+        <property id="4161610248909488083" name="className" index="3q7JQF" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="2$UQVi" id="2rCEsMWRYld">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRYle" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYlf" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="8740169024642290102" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYlg" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845346089" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRYlc" role="2$VCQN">
+      <property role="3q7JQF" value="BwWorkflowProcessCompositeKey.Client" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRYmA">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRYmB" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYmC" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="8740169024642290105" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYmD" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845346178" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRYm_" role="2$VCQN">
+      <property role="3q7JQF" value="BwWorkflowProcessCompositeKey.IdNumber" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRYnZ">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRYo0" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYo1" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="8740169024642290108" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYo2" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845346267" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRYnY" role="2$VCQN">
+      <property role="3q7JQF" value="BwWorkflowProcessCompositeKey.Version" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRYpr">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRYps" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYpt" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="8740169024642288979" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYpu" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845346359" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRYpq" role="2$VCQN">
+      <property role="3q7JQF" value="WorkflowProcess.BwWorkflowProcessCompositeKey" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRYqM">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRYqN" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYqO" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="4886040379320919331" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYqP" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845346446" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRYqL" role="2$VCQN">
+      <property role="3q7JQF" value="WorkflowProcess.Active" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRYsb">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRYsc" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYsd" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="4886040379320919337" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYse" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845346535" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRYsa" role="2$VCQN">
+      <property role="3q7JQF" value="WorkflowProcess.ActivityType" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRYt$">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRYt_" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYtA" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="4886040379320919343" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYtB" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845346624" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRYtz" role="2$VCQN">
+      <property role="3q7JQF" value="WorkflowProcess.ArchivingRequired" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRYuX">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRYuY" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYuZ" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="4886040379320919349" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYv0" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845346713" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRYuW" role="2$VCQN">
+      <property role="3q7JQF" value="WorkflowProcess.BusinessTask" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRYwm">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRYwn" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYwo" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="4886040379320919355" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYwp" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845346802" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRYwl" role="2$VCQN">
+      <property role="3q7JQF" value="WorkflowProcess.BxBpelDefinition" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRYxJ">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRYxK" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYxL" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="4886040379320919361" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYxM" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845346891" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRYxI" role="2$VCQN">
+      <property role="3q7JQF" value="WorkflowProcess.ChangedBy" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRYz8">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRYz9" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYza" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="4886040379320919367" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYzb" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845346980" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRYz7" role="2$VCQN">
+      <property role="3q7JQF" value="WorkflowProcess.ClActivity" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRY$x">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRY$y" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRY$z" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="4886040379320919373" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRY$$" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845347069" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRY$w" role="2$VCQN">
+      <property role="3q7JQF" value="WorkflowProcess.CreateItemUser" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRY_U">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRY_V" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRY_W" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="4886040379320919379" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRY_X" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845347158" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRY_T" role="2$VCQN">
+      <property role="3q7JQF" value="WorkflowProcess.CreateProcInst" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRYBj">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRYBk" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYBl" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="4886040379320919385" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYBm" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845347247" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRYBi" role="2$VCQN">
+      <property role="3q7JQF" value="WorkflowProcess.CreatedAt" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRYCG">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRYCH" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYCI" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="4886040379320919391" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYCJ" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845347336" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRYCF" role="2$VCQN">
+      <property role="3q7JQF" value="WorkflowProcess.CreatedBy" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRYE5">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRYE6" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYE7" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="4886040379320919397" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYE8" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845347425" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRYE4" role="2$VCQN">
+      <property role="3q7JQF" value="WorkflowProcess.CriticalDurUnit" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRYFu">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRYFv" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYFw" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="4886040379320919403" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYFx" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845347514" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRYFt" role="2$VCQN">
+      <property role="3q7JQF" value="WorkflowProcess.CriticalDuration" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRYGR">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRYGS" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYGT" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="4886040379320919409" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYGU" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845347603" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRYGQ" role="2$VCQN">
+      <property role="3q7JQF" value="WorkflowProcess.CriticalWEnd" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRYIg">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRYIh" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYIi" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="4886040379320919415" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYIj" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845347692" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRYIf" role="2$VCQN">
+      <property role="3q7JQF" value="WorkflowProcess.CriticalWEndTyp" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRYJD">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRYJE" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYJF" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="4886040379320919421" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYJG" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845347781" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRYJC" role="2$VCQN">
+      <property role="3q7JQF" value="WorkflowProcess.DescriptionBotId" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRYL2">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRYL3" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYL4" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="4886040379320919427" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYL5" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845347870" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRYL1" role="2$VCQN">
+      <property role="3q7JQF" value="WorkflowProcess.DiWatchdog" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRYMr">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRYMs" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYMt" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="4886040379320919433" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYMu" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845347959" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRYMq" role="2$VCQN">
+      <property role="3q7JQF" value="WorkflowProcess.DueDurUnit" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRYNO">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRYNP" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYNQ" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="4886040379320919439" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYNR" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845348048" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRYNN" role="2$VCQN">
+      <property role="3q7JQF" value="WorkflowProcess.DueWEnd" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRYPd">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRYPe" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYPf" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="4886040379320919445" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYPg" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845348137" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRYPc" role="2$VCQN">
+      <property role="3q7JQF" value="WorkflowProcess.DueWEndTyp" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRYQA">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRYQB" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYQC" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="4886040379320919451" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYQD" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845348226" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRYQ_" role="2$VCQN">
+      <property role="3q7JQF" value="WorkflowProcess.ErrorLevel" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRYRZ">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRYS0" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYS1" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="4886040379320919457" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYS2" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845348315" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRYRY" role="2$VCQN">
+      <property role="3q7JQF" value="WorkflowProcess.HandleDuplBuskey" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRYTo">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRYTp" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYTq" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="4886040379320919463" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYTr" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845348404" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRYTn" role="2$VCQN">
+      <property role="3q7JQF" value="WorkflowProcess.HousekeptAfter" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRYUL">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRYUM" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYUN" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="4886040379320919469" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYUO" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845348493" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRYUK" role="2$VCQN">
+      <property role="3q7JQF" value="WorkflowProcess.IncomingConnector" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRYWa">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRYWb" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYWc" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="4886040379320919475" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYWd" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845348582" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRYW9" role="2$VCQN">
+      <property role="3q7JQF" value="WorkflowProcess.LastChange" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRYXz">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRYX$" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYX_" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="4886040379320919481" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYXA" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845348671" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRYXy" role="2$VCQN">
+      <property role="3q7JQF" value="WorkflowProcess.LcValidStateR" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRYYW">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRYYX" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYYY" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="4886040379320919487" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRYYZ" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845348760" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRYYV" role="2$VCQN">
+      <property role="3q7JQF" value="WorkflowProcess.Longname" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRZ0l">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRZ0m" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRZ0n" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="4886040379320919493" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRZ0o" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845348849" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRZ0k" role="2$VCQN">
+      <property role="3q7JQF" value="WorkflowProcess.ManualTermPossib" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRZ1I">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRZ1J" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRZ1K" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="4886040379320919499" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRZ1L" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845348938" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRZ1H" role="2$VCQN">
+      <property role="3q7JQF" value="WorkflowProcess.MaxDurationDflt" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRZ37">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRZ38" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRZ39" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="4886040379320919505" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRZ3a" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845349027" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRZ36" role="2$VCQN">
+      <property role="3q7JQF" value="WorkflowProcess.ObsRelevant" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRZ4w">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRZ4x" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRZ4y" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="4886040379320919511" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRZ4z" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845349116" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRZ4v" role="2$VCQN">
+      <property role="3q7JQF" value="WorkflowProcess.SchedulingType" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRZ5T">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRZ5U" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRZ5V" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="4886040379320919517" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRZ5W" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845349205" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRZ5S" role="2$VCQN">
+      <property role="3q7JQF" value="WorkflowProcess.SendEmail" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRZ7i">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRZ7j" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRZ7k" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="4886040379320919523" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRZ7l" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845349294" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRZ7h" role="2$VCQN">
+      <property role="3q7JQF" value="WorkflowProcess.Settings" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRZ8F">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRZ8G" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRZ8H" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="4886040379320919529" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRZ8I" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845349383" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRZ8E" role="2$VCQN">
+      <property role="3q7JQF" value="WorkflowProcess.ShowInInbox" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRZa4">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRZa5" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRZa6" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="4886040379320919535" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRZa7" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845349472" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRZa3" role="2$VCQN">
+      <property role="3q7JQF" value="WorkflowProcess.StartCondOptim" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRZbt">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRZbu" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRZbv" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="4886040379320919541" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRZbw" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845349561" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRZbs" role="2$VCQN">
+      <property role="3q7JQF" value="WorkflowProcess.StartCondition" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRZcQ">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRZcR" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRZcS" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="4886040379320919547" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRZcT" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845349650" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRZcP" role="2$VCQN">
+      <property role="3q7JQF" value="WorkflowProcess.StartDurUnit" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRZef">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRZeg" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRZeh" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="4886040379320919553" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRZei" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845349739" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRZee" role="2$VCQN">
+      <property role="3q7JQF" value="WorkflowProcess.StartDuration" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRZfC">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRZfD" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRZfE" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="4886040379320919559" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRZfF" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845349828" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRZfB" role="2$VCQN">
+      <property role="3q7JQF" value="WorkflowProcess.StartLcStates" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRZh1">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRZh2" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRZh3" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="4886040379320919565" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRZh4" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845349917" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRZh0" role="2$VCQN">
+      <property role="3q7JQF" value="WorkflowProcess.StartWEnd" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRZiq">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRZir" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRZis" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="4886040379320919571" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRZit" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845350006" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRZip" role="2$VCQN">
+      <property role="3q7JQF" value="WorkflowProcess.StartWEndTyp" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRZjN">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRZjO" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRZjP" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="4886040379320919577" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRZjQ" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845350095" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRZjM" role="2$VCQN">
+      <property role="3q7JQF" value="WorkflowProcess.State" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRZlc">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRZld" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRZle" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="4886040379320919583" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRZlf" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845350184" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRZlb" role="2$VCQN">
+      <property role="3q7JQF" value="WorkflowProcess.StateValueTable" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRZm_">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRZmA" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRZmB" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="4886040379320919589" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRZmC" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845350273" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRZm$" role="2$VCQN">
+      <property role="3q7JQF" value="WorkflowProcess.TermCondOptim" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRZnY">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRZnZ" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRZo0" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="4886040379320919595" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRZo1" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845350362" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRZnX" role="2$VCQN">
+      <property role="3q7JQF" value="WorkflowProcess.TermCondition" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRZpn">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRZpo" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRZpp" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="4886040379320919601" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRZpq" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845350451" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRZpm" role="2$VCQN">
+      <property role="3q7JQF" value="WorkflowProcess.TermLcStates" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRZqK">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRZqL" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRZqM" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="4886040379320919607" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRZqN" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845350540" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRZqJ" role="2$VCQN">
+      <property role="3q7JQF" value="WorkflowProcess.TrxToStart" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRZs9">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRZsa" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRZsb" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="4886040379320919613" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRZsc" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845350629" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRZs8" role="2$VCQN">
+      <property role="3q7JQF" value="WorkflowProcess.Type0" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRZty">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRZtz" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRZt$" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="4886040379320919619" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRZt_" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845350718" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRZtx" role="2$VCQN">
+      <property role="3q7JQF" value="WorkflowProcess.ValidFrom" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRZuY">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRZuZ" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRZv0" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="4886040379320919628" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRZv1" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845350810" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRZuX" role="2$VCQN">
+      <property role="3q7JQF" value="WorkflowProcess.ValidTo" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRZwq">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRZwr" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRZws" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="4886040379320919637" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRZwt" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845350902" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRZwp" role="2$VCQN">
+      <property role="3q7JQF" value="WorkflowProcess.WarningDurUnit" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRZxN">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRZxO" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRZxP" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="4886040379320919643" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRZxQ" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845350991" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRZxM" role="2$VCQN">
+      <property role="3q7JQF" value="WorkflowProcess.WarningDuration" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRZzc">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRZzd" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRZze" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="4886040379320919649" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRZzf" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845351080" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRZzb" role="2$VCQN">
+      <property role="3q7JQF" value="WorkflowProcess.WarningWEnd" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRZ$_">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRZ$A" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRZ$B" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="4886040379320919655" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRZ$C" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845351169" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRZ$$" role="2$VCQN">
+      <property role="3q7JQF" value="WorkflowProcess.WarningWEndTyp" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2rCEsMWRZ_Y">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2rCEsMWRZ_Z" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.mpsstandalone.workflow.domain" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRZA0" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="4886040379320919661" />
+    </node>
+    <node concept="2$VJBW" id="2rCEsMWRZA1" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="2803677464845351258" />
+    </node>
+    <node concept="3q7JOj" id="2rCEsMWRZ_X" role="2$VCQN">
+      <property role="3q7JQF" value="WorkflowProcess.WatchdogXmlDoc" />
+    </node>
+  </node>
+</model>
+

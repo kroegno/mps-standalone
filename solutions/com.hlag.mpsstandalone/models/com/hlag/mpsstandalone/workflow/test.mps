@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:0757cf2b-b103-4f51-a823-cb7c5109f7bd(com.hlag.mpsstandalone.test)">
+<model ref="r:0757cf2b-b103-4f51-a823-cb7c5109f7bd(com.hlag.mpsstandalone.workflow.test)">
   <persistence version="9" />
   <languages>
     <use id="a846e4ee-ad86-4f44-b75a-4763a2ae30f6" name="com.hlag.jpql" version="-1" />
@@ -13,7 +13,7 @@
     <import index="8mn1" ref="b263f292-6e43-46d0-829c-100beca2960f/f:java_stub#b263f292-6e43-46d0-829c-100beca2960f#javax.persistence(com.hlag.entitylang.runtime/javax.persistence@java_stub)" />
     <import index="ixkh" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.security(JDK/java.security@java_stub)" />
     <import index="k7g3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
-    <import index="me44" ref="r:b60e2512-a024-4e7c-8244-4b09423e8f93(com.hlag.mpsstandalone.domain)" />
+    <import index="me44" ref="r:b60e2512-a024-4e7c-8244-4b09423e8f93(com.hlag.mpsstandalone.workflow.domain)" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
     <import index="8vib" ref="86441d7a-e194-42da-81a5-2161ec62a379/f:java_stub#86441d7a-e194-42da-81a5-2161ec62a379#org.junit(MPS.Workbench/org.junit@java_stub)" />
     <import index="c440" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#com.sun.tools.javadoc.resources(JDK/com.sun.tools.javadoc.resources@java_stub)" />
@@ -106,9 +106,7 @@
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
-      <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_">
-        <property id="1178608670077" name="isAbstract" index="1EzhhJ" />
-      </concept>
+      <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_" />
       <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
@@ -917,56 +915,55 @@
     <node concept="2tJIrI" id="6YrIhiEmM0T" role="jymVt" />
     <node concept="2tJIrI" id="6YrIhiEpBnY" role="jymVt" />
     <node concept="2tJIrI" id="6YrIhiEpCGt" role="jymVt" />
-    <node concept="3clFb_" id="6YrIhiEmIyM" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="createPersistenceXML" />
-      <property role="od$2w" value="false" />
+    <node concept="2YIFZL" id="2rCEsMWRrm3" role="jymVt">
+      <property role="TrG5h" value="setUpBeforeClass" />
       <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
       <property role="2aFKle" value="false" />
-      <node concept="3clFbS" id="6YrIhiEmIyP" role="3clF47">
-        <node concept="SfApY" id="6YrIhiEpwE$" role="3cqZAp">
-          <node concept="3clFbS" id="6YrIhiEpwE_" role="SfCbr">
-            <node concept="3clFbH" id="6YrIhiEpwEA" role="3cqZAp" />
-            <node concept="3SKdUt" id="6YrIhiEpwEB" role="3cqZAp">
-              <node concept="3SKdUq" id="6YrIhiEpwEC" role="3SKWNk">
+      <node concept="3clFbS" id="2rCEsMWRrm5" role="3clF47">
+        <node concept="SfApY" id="2rCEsMWRrm6" role="3cqZAp">
+          <node concept="3clFbS" id="2rCEsMWRrm7" role="SfCbr">
+            <node concept="3clFbH" id="2rCEsMWRrm8" role="3cqZAp" />
+            <node concept="3SKdUt" id="2rCEsMWRrm9" role="3cqZAp">
+              <node concept="3SKdUq" id="2rCEsMWRrma" role="3SKWNk">
                 <property role="3SKdUp" value="copy persistence.xml ...." />
               </node>
             </node>
-            <node concept="3SKdUt" id="6YrIhiEpwED" role="3cqZAp">
-              <node concept="3SKdUq" id="6YrIhiEpwEE" role="3SKWNk">
+            <node concept="3SKdUt" id="2rCEsMWRrmb" role="3cqZAp">
+              <node concept="3SKdUq" id="2rCEsMWRrmc" role="3SKWNk">
                 <property role="3SKdUp" value="todo password externalisieren" />
               </node>
             </node>
-            <node concept="3cpWs8" id="6YrIhiEpwEF" role="3cqZAp">
-              <node concept="3cpWsn" id="6YrIhiEpwEG" role="3cpWs9">
+            <node concept="3cpWs8" id="2rCEsMWRrmd" role="3cqZAp">
+              <node concept="3cpWsn" id="2rCEsMWRrme" role="3cpWs9">
                 <property role="3TUv4t" value="true" />
                 <property role="TrG5h" value="f" />
-                <node concept="3uibUv" id="6YrIhiEpwEH" role="1tU5fm">
+                <node concept="3uibUv" id="2rCEsMWRrmf" role="1tU5fm">
                   <ref role="3uigEE" to="fxg7:~File" resolve="File" />
                 </node>
-                <node concept="2ShNRf" id="6YrIhiEpwEI" role="33vP2m">
-                  <node concept="1pGfFk" id="6YrIhiEpwEJ" role="2ShVmc">
+                <node concept="2ShNRf" id="2rCEsMWRrmg" role="33vP2m">
+                  <node concept="1pGfFk" id="2rCEsMWRrmh" role="2ShVmc">
                     <ref role="37wK5l" to="fxg7:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
-                    <node concept="2OqwBi" id="6YrIhiEpwEK" role="37wK5m">
-                      <node concept="2OqwBi" id="6YrIhiEpwEL" role="2Oq$k0">
-                        <node concept="2OqwBi" id="6YrIhiEpwEM" role="2Oq$k0">
-                          <node concept="2OqwBi" id="6YrIhiEpwEN" role="2Oq$k0">
-                            <node concept="3VsKOn" id="6YrIhiEpwEO" role="2Oq$k0">
+                    <node concept="2OqwBi" id="2rCEsMWRrmi" role="37wK5m">
+                      <node concept="2OqwBi" id="2rCEsMWRrmj" role="2Oq$k0">
+                        <node concept="2OqwBi" id="2rCEsMWRrmk" role="2Oq$k0">
+                          <node concept="2OqwBi" id="2rCEsMWRrml" role="2Oq$k0">
+                            <node concept="3VsKOn" id="2rCEsMWRrmm" role="2Oq$k0">
                               <ref role="3VsUkX" node="4$MXrxpzrL3" resolve="DB2EclipseLinkStartupTest" />
                             </node>
-                            <node concept="liA8E" id="6YrIhiEpwEP" role="2OqNvi">
+                            <node concept="liA8E" id="2rCEsMWRrmn" role="2OqNvi">
                               <ref role="37wK5l" to="e2lb:~Class.getProtectionDomain():java.security.ProtectionDomain" resolve="getProtectionDomain" />
                             </node>
                           </node>
-                          <node concept="liA8E" id="6YrIhiEpwEQ" role="2OqNvi">
+                          <node concept="liA8E" id="2rCEsMWRrmo" role="2OqNvi">
                             <ref role="37wK5l" to="ixkh:~ProtectionDomain.getCodeSource():java.security.CodeSource" resolve="getCodeSource" />
                           </node>
                         </node>
-                        <node concept="liA8E" id="6YrIhiEpwER" role="2OqNvi">
+                        <node concept="liA8E" id="2rCEsMWRrmp" role="2OqNvi">
                           <ref role="37wK5l" to="ixkh:~CodeSource.getLocation():java.net.URL" resolve="getLocation" />
                         </node>
                       </node>
-                      <node concept="liA8E" id="6YrIhiEpwES" role="2OqNvi">
+                      <node concept="liA8E" id="2rCEsMWRrmq" role="2OqNvi">
                         <ref role="37wK5l" to="22fg:~URL.getPath():java.lang.String" resolve="getPath" />
                       </node>
                     </node>
@@ -974,142 +971,149 @@
                 </node>
               </node>
             </node>
-            <node concept="3cpWs8" id="6YrIhiEpwET" role="3cqZAp">
-              <node concept="3cpWsn" id="6YrIhiEpwEU" role="3cpWs9">
+            <node concept="3cpWs8" id="2rCEsMWRrmr" role="3cqZAp">
+              <node concept="3cpWsn" id="2rCEsMWRrms" role="3cpWs9">
                 <property role="TrG5h" value="persistanceXml" />
-                <node concept="17QB3L" id="6YrIhiEpwEV" role="1tU5fm" />
-                <node concept="3cpWs3" id="6YrIhiEpwEW" role="33vP2m">
-                  <node concept="Xl_RD" id="6YrIhiEpwEX" role="3uHU7w">
+                <node concept="17QB3L" id="2rCEsMWRrmt" role="1tU5fm" />
+                <node concept="3cpWs3" id="2rCEsMWRrmu" role="33vP2m">
+                  <node concept="Xl_RD" id="2rCEsMWRrmv" role="3uHU7w">
                     <property role="Xl_RC" value="/META-INF/persistence.xml" />
                   </node>
-                  <node concept="2OqwBi" id="6YrIhiEpwEY" role="3uHU7B">
-                    <node concept="37vLTw" id="6YrIhiEpwEZ" role="2Oq$k0">
-                      <ref role="3cqZAo" node="6YrIhiEpwEG" resolve="f" />
+                  <node concept="2OqwBi" id="2rCEsMWRrmw" role="3uHU7B">
+                    <node concept="37vLTw" id="2rCEsMWRrmx" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2rCEsMWRrme" resolve="f" />
                     </node>
-                    <node concept="liA8E" id="6YrIhiEpwF0" role="2OqNvi">
+                    <node concept="liA8E" id="2rCEsMWRrmy" role="2OqNvi">
                       <ref role="37wK5l" to="fxg7:~File.getAbsolutePath():java.lang.String" resolve="getAbsolutePath" />
                     </node>
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="6YrIhiEpwF1" role="3cqZAp">
-              <node concept="2OqwBi" id="6YrIhiEpwF2" role="3clFbG">
-                <node concept="10M0yZ" id="6YrIhiEpwF3" role="2Oq$k0">
+            <node concept="3clFbF" id="2rCEsMWRrmz" role="3cqZAp">
+              <node concept="2OqwBi" id="2rCEsMWRrm$" role="3clFbG">
+                <node concept="10M0yZ" id="2rCEsMWRrm_" role="2Oq$k0">
                   <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
                   <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
                 </node>
-                <node concept="liA8E" id="6YrIhiEpwF4" role="2OqNvi">
+                <node concept="liA8E" id="2rCEsMWRrmA" role="2OqNvi">
                   <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
-                  <node concept="3cpWs3" id="6YrIhiEpwF5" role="37wK5m">
-                    <node concept="Xl_RD" id="6YrIhiEpwF6" role="3uHU7w">
+                  <node concept="3cpWs3" id="2rCEsMWRrmB" role="37wK5m">
+                    <node concept="Xl_RD" id="2rCEsMWRrmC" role="3uHU7w">
                       <property role="Xl_RC" value="\n\n" />
                     </node>
-                    <node concept="3cpWs3" id="6YrIhiEpwF7" role="3uHU7B">
-                      <node concept="Xl_RD" id="6YrIhiEpwF8" role="3uHU7B">
+                    <node concept="3cpWs3" id="2rCEsMWRrmD" role="3uHU7B">
+                      <node concept="Xl_RD" id="2rCEsMWRrmE" role="3uHU7B">
                         <property role="Xl_RC" value="EcliplseLinkStartup - creating persistance.xml at\n" />
                       </node>
-                      <node concept="37vLTw" id="6YrIhiEpwF9" role="3uHU7w">
-                        <ref role="3cqZAo" node="6YrIhiEpwEU" resolve="persistanceXml" />
+                      <node concept="37vLTw" id="2rCEsMWRrmF" role="3uHU7w">
+                        <ref role="3cqZAo" node="2rCEsMWRrms" resolve="persistanceXml" />
                       </node>
                     </node>
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3cpWs8" id="6YrIhiEpwFa" role="3cqZAp">
-              <node concept="3cpWsn" id="6YrIhiEpwFb" role="3cpWs9">
+            <node concept="3cpWs8" id="2rCEsMWRrmG" role="3cqZAp">
+              <node concept="3cpWsn" id="2rCEsMWRrmH" role="3cpWs9">
                 <property role="3TUv4t" value="false" />
                 <property role="TrG5h" value="writer" />
-                <node concept="3uibUv" id="6YrIhiEpwFc" role="1tU5fm">
+                <node concept="3uibUv" id="2rCEsMWRrmI" role="1tU5fm">
                   <ref role="3uigEE" to="fxg7:~PrintWriter" resolve="PrintWriter" />
                 </node>
-                <node concept="2ShNRf" id="6YrIhiEpwFd" role="33vP2m">
-                  <node concept="1pGfFk" id="6YrIhiEpwFe" role="2ShVmc">
+                <node concept="2ShNRf" id="2rCEsMWRrmJ" role="33vP2m">
+                  <node concept="1pGfFk" id="2rCEsMWRrmK" role="2ShVmc">
                     <ref role="37wK5l" to="fxg7:~PrintWriter.&lt;init&gt;(java.lang.String,java.lang.String)" resolve="PrintWriter" />
-                    <node concept="37vLTw" id="6YrIhiEpwFf" role="37wK5m">
-                      <ref role="3cqZAo" node="6YrIhiEpwEU" resolve="persistanceXml" />
+                    <node concept="37vLTw" id="2rCEsMWRrmL" role="37wK5m">
+                      <ref role="3cqZAo" node="2rCEsMWRrms" resolve="persistanceXml" />
                     </node>
-                    <node concept="Xl_RD" id="6YrIhiEpwFg" role="37wK5m">
+                    <node concept="Xl_RD" id="2rCEsMWRrmM" role="37wK5m">
                       <property role="Xl_RC" value="UTF-8" />
                     </node>
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="6YrIhiEpwFh" role="3cqZAp">
-              <node concept="2OqwBi" id="6YrIhiEpwFi" role="3clFbG">
-                <node concept="37vLTw" id="6YrIhiEpwFj" role="2Oq$k0">
-                  <ref role="3cqZAo" node="6YrIhiEpwFb" resolve="writer" />
+            <node concept="3clFbF" id="2rCEsMWRrmN" role="3cqZAp">
+              <node concept="2OqwBi" id="2rCEsMWRrmO" role="3clFbG">
+                <node concept="37vLTw" id="2rCEsMWRrmP" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2rCEsMWRrmH" resolve="writer" />
                 </node>
-                <node concept="liA8E" id="6YrIhiEpwFk" role="2OqNvi">
+                <node concept="liA8E" id="2rCEsMWRrmQ" role="2OqNvi">
                   <ref role="37wK5l" to="fxg7:~PrintWriter.print(java.lang.String):void" resolve="print" />
-                  <node concept="10M0yZ" id="6YrIhiEpz3C" role="37wK5m">
+                  <node concept="10M0yZ" id="2rCEsMWRrmR" role="37wK5m">
                     <ref role="1PxDUh" node="6YrIhiElh_L" resolve="TestBase" />
                     <ref role="3cqZAo" node="6YrIhiEmDRH" resolve="cfg" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="6YrIhiEpwFm" role="3cqZAp">
-              <node concept="2OqwBi" id="6YrIhiEpwFn" role="3clFbG">
-                <node concept="37vLTw" id="6YrIhiEpwFo" role="2Oq$k0">
-                  <ref role="3cqZAo" node="6YrIhiEpwFb" resolve="writer" />
+            <node concept="3clFbF" id="2rCEsMWRrmS" role="3cqZAp">
+              <node concept="2OqwBi" id="2rCEsMWRrmT" role="3clFbG">
+                <node concept="37vLTw" id="2rCEsMWRrmU" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2rCEsMWRrmH" resolve="writer" />
                 </node>
-                <node concept="liA8E" id="6YrIhiEpwFp" role="2OqNvi">
+                <node concept="liA8E" id="2rCEsMWRrmV" role="2OqNvi">
                   <ref role="37wK5l" to="fxg7:~PrintWriter.close():void" resolve="close" />
                 </node>
               </node>
             </node>
-            <node concept="3clFbH" id="6YrIhiEpwGT" role="3cqZAp" />
+            <node concept="3clFbH" id="2rCEsMWRrmW" role="3cqZAp" />
           </node>
-          <node concept="TDmWw" id="6YrIhiEpwGU" role="TEbGg">
-            <node concept="3clFbS" id="6YrIhiEpwGV" role="TDEfX">
-              <node concept="YS8fn" id="6YrIhiEpwGW" role="3cqZAp">
-                <node concept="2ShNRf" id="6YrIhiEpwGX" role="YScLw">
-                  <node concept="1pGfFk" id="6YrIhiEpwGY" role="2ShVmc">
+          <node concept="TDmWw" id="2rCEsMWRrmX" role="TEbGg">
+            <node concept="3clFbS" id="2rCEsMWRrmY" role="TDEfX">
+              <node concept="YS8fn" id="2rCEsMWRrmZ" role="3cqZAp">
+                <node concept="2ShNRf" id="2rCEsMWRrn0" role="YScLw">
+                  <node concept="1pGfFk" id="2rCEsMWRrn1" role="2ShVmc">
                     <ref role="37wK5l" to="e2lb:~RuntimeException.&lt;init&gt;(java.lang.Throwable)" resolve="RuntimeException" />
-                    <node concept="37vLTw" id="6YrIhiEpwGZ" role="37wK5m">
-                      <ref role="3cqZAo" node="6YrIhiEpwH0" resolve="e" />
+                    <node concept="37vLTw" id="2rCEsMWRrn2" role="37wK5m">
+                      <ref role="3cqZAo" node="2rCEsMWRrn3" resolve="e" />
                     </node>
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3cpWsn" id="6YrIhiEpwH0" role="TDEfY">
+            <node concept="3cpWsn" id="2rCEsMWRrn3" role="TDEfY">
               <property role="TrG5h" value="e" />
-              <node concept="3uibUv" id="6YrIhiEpwH1" role="1tU5fm">
+              <node concept="3uibUv" id="2rCEsMWRrn4" role="1tU5fm">
                 <ref role="3uigEE" to="fxg7:~UnsupportedEncodingException" resolve="UnsupportedEncodingException" />
               </node>
             </node>
           </node>
-          <node concept="TDmWw" id="6YrIhiEpwH2" role="TEbGg">
-            <node concept="3clFbS" id="6YrIhiEpwH3" role="TDEfX">
-              <node concept="YS8fn" id="6YrIhiEpwH4" role="3cqZAp">
-                <node concept="2ShNRf" id="6YrIhiEpwH5" role="YScLw">
-                  <node concept="1pGfFk" id="6YrIhiEpwH6" role="2ShVmc">
+          <node concept="TDmWw" id="2rCEsMWRrn5" role="TEbGg">
+            <node concept="3clFbS" id="2rCEsMWRrn6" role="TDEfX">
+              <node concept="YS8fn" id="2rCEsMWRrn7" role="3cqZAp">
+                <node concept="2ShNRf" id="2rCEsMWRrn8" role="YScLw">
+                  <node concept="1pGfFk" id="2rCEsMWRrn9" role="2ShVmc">
                     <ref role="37wK5l" to="e2lb:~RuntimeException.&lt;init&gt;(java.lang.Throwable)" resolve="RuntimeException" />
-                    <node concept="37vLTw" id="6YrIhiEpwH7" role="37wK5m">
-                      <ref role="3cqZAo" node="6YrIhiEpwH8" resolve="e" />
+                    <node concept="37vLTw" id="2rCEsMWRrna" role="37wK5m">
+                      <ref role="3cqZAo" node="2rCEsMWRrnb" resolve="e" />
                     </node>
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3cpWsn" id="6YrIhiEpwH8" role="TDEfY">
+            <node concept="3cpWsn" id="2rCEsMWRrnb" role="TDEfY">
               <property role="TrG5h" value="e" />
-              <node concept="3uibUv" id="6YrIhiEpwH9" role="1tU5fm">
+              <node concept="3uibUv" id="2rCEsMWRrnc" role="1tU5fm">
                 <ref role="3uigEE" to="fxg7:~FileNotFoundException" resolve="FileNotFoundException" />
               </node>
             </node>
           </node>
         </node>
       </node>
-      <node concept="3Tm1VV" id="6YrIhiEmIj3" role="1B3o_S" />
-      <node concept="3cqZAl" id="6YrIhiEmIqi" role="3clF45" />
-      <node concept="P$JXv" id="6YrIhiEmM9v" role="lGtFl">
-        <node concept="TZ5HA" id="6YrIhiEmM9w" role="TZ5H$">
-          <node concept="1dT_AC" id="6YrIhiEmM9x" role="1dT_Ay">
+      <node concept="3cqZAl" id="2rCEsMWRrne" role="3clF45" />
+      <node concept="P$JXv" id="2rCEsMWRrnf" role="lGtFl">
+        <node concept="TZ5HA" id="2rCEsMWRrng" role="TZ5H$">
+          <node concept="1dT_AC" id="2rCEsMWRrnh" role="1dT_Ay">
+            <property role="1dT_AB" value="Test-Vorbereitung: PersistenceXML erzeugen" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="2rCEsMWRrnj" role="1B3o_S" />
+      <node concept="P$JXv" id="2rCEsMWRrnk" role="lGtFl">
+        <node concept="TZ5HA" id="2rCEsMWRrnl" role="TZ5H$">
+          <node concept="1dT_AC" id="2rCEsMWRrnm" role="1dT_Ay">
             <property role="1dT_AB" value="Test-Vorbereitung: PersistenceXML erzeugen" />
           </node>
         </node>

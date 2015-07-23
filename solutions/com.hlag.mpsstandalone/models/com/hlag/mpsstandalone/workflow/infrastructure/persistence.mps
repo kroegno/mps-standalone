@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:bd77c06f-0aec-40b3-ac5f-59e44d900413(com.hlag.mpsstandalone.infrastructure.persistence)">
+<model ref="r:bd77c06f-0aec-40b3-ac5f-59e44d900413(com.hlag.mpsstandalone.workflow.infrastructure.persistence)">
   <persistence version="9" />
   <languages>
     <use id="a846e4ee-ad86-4f44-b75a-4763a2ae30f6" name="com.hlag.jpql" version="-1" />
