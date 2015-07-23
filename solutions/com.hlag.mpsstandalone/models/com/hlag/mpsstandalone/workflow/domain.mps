@@ -6,11 +6,13 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
   </languages>
   <imports>
-    <import index="tplq" ref="99e16e2b-b314-4f3e-9fbd-7cf8a5c94f9a/f:java_stub#99e16e2b-b314-4f3e-9fbd-7cf8a5c94f9a#com.hlag.workflow.domain.model2(com.hlag.entitylang.sandbox/com.hlag.workflow.domain.model2@java_stub)" />
     <import index="8mn1" ref="b263f292-6e43-46d0-829c-100beca2960f/f:java_stub#b263f292-6e43-46d0-829c-100beca2960f#javax.persistence(com.hlag.entitylang.runtime/javax.persistence@java_stub)" />
     <import index="epq1" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.math(JDK/java.math@java_stub)" />
     <import index="k7g3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
+    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <import index="26f1" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.sql(JDK/java.sql@java_stub)" />
+    <import index="me44" ref="r:b60e2512-a024-4e7c-8244-4b09423e8f93(com.hlag.mpsstandalone.workflow.domain)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -18,6 +20,7 @@
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
+      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
       </concept>
@@ -47,6 +50,9 @@
       </concept>
       <concept id="1070533982221" name="jetbrains.mps.baseLanguage.structure.ShortType" flags="in" index="10N3zO" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
+      <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
+        <child id="1165602531693" name="superclass" index="1zkMxy" />
+      </concept>
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
         <property id="1181808852946" name="isFinal" index="DiZV1" />
@@ -73,6 +79,7 @@
       </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
+        <child id="1109201940907" name="parameter" index="11_B2D" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -82,6 +89,7 @@
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
+      <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -112,6 +120,7 @@
         <reference id="1631019930970738956" name="method" index="11HlFK" />
         <child id="1631019930970738958" name="value" index="11HlFM" />
       </concept>
+      <concept id="4885443306602654037" name="com.hlag.entitylang.structure.JpaAnnotationArrayLiteral" flags="ng" index="3v$fQo" />
       <concept id="2996449965958866096" name="com.hlag.entitylang.structure.EntityKey" flags="ig" index="1DC2fI">
         <child id="2996449965958877542" name="jpaAnnotations" index="1DC5oS" />
         <child id="2996449965958877543" name="fields" index="1DC5oT" />
@@ -119,7 +128,7 @@
     </language>
   </registry>
   <node concept="GG2rC" id="7_bkmIAFgHL">
-    <property role="TrG5h" value="BwWorkflowProcess" />
+    <property role="TrG5h" value="WorkflowProcess" />
     <node concept="11HBgY" id="7O6OfEh0Cko" role="1_7FOF">
       <ref role="11HSJC" to="8mn1:~Entity" resolve="Entity" />
     </node>
@@ -131,7 +140,7 @@
           <node concept="37vLTI" id="7O6OfEh12hi" role="3clFbG">
             <node concept="2ShNRf" id="7O6OfEh12hY" role="37vLTx">
               <node concept="HV5vD" id="7O6OfEh1576" role="2ShVmc">
-                <ref role="HV5vE" node="7_bkmIAFh6N" resolve="BwWorkflowProcess.BwWorkflowProcessCompositeKey" />
+                <ref role="HV5vE" node="7_bkmIAFh6N" resolve="WorkflowProcess.WorkflowProcessCompositeKey" />
               </node>
             </node>
             <node concept="2OqwBi" id="7O6OfEh1266" role="37vLTJ">
@@ -165,7 +174,7 @@
             <node concept="3cpWs3" id="7O6OfEh1aSU" role="3uHU7B">
               <node concept="3cpWs3" id="7O6OfEh19qS" role="3uHU7B">
                 <node concept="Xl_RD" id="7O6OfEh192M" role="3uHU7B">
-                  <property role="Xl_RC" value="BwWorkflowProcess: " />
+                  <property role="Xl_RC" value="WorkflowProcess: " />
                 </node>
                 <node concept="2OqwBi" id="7O6OfEh1a0a" role="3uHU7w">
                   <node concept="2OqwBi" id="7O6OfEh19MY" role="2Oq$k0">
@@ -219,9 +228,9 @@
     <node concept="GGpVp" id="7_bkmIAFgPi" role="GGm2j">
       <property role="TrG5h" value="compositeKey" />
       <node concept="GJnRb" id="7_bkmIAFgPj" role="GJgAG">
-        <property role="TrG5h" value="BwWorkflowProcessCompositeKey" />
+        <property role="TrG5h" value="WorkflowProcessCompositeKey" />
         <node concept="3uibUv" id="7_bkmIAG9ts" role="GJnR6">
-          <ref role="3uigEE" node="7_bkmIAFh6N" resolve="BwWorkflowProcess.BwWorkflowProcessCompositeKey" />
+          <ref role="3uigEE" node="7_bkmIAFh6N" resolve="WorkflowProcess.WorkflowProcessCompositeKey" />
         </node>
       </node>
       <node concept="11HBgY" id="7_bkmIAG9th" role="11Hwta">
@@ -1209,7 +1218,7 @@
       </node>
     </node>
     <node concept="1DC2fI" id="7_bkmIAFh6N" role="1DC6iq">
-      <property role="TrG5h" value="BwWorkflowProcessCompositeKey" />
+      <property role="TrG5h" value="WorkflowProcessCompositeKey" />
       <node concept="11HBgY" id="7O6OfEgYVck" role="1DC5oS">
         <ref role="11HSJC" to="8mn1:~Embeddable" resolve="Embeddable" />
       </node>
@@ -1265,6 +1274,1294 @@
           <property role="TrG5h" value="Version" />
           <node concept="3uibUv" id="7_bkmIAFh6X" role="GJnR6">
             <ref role="3uigEE" to="e2lb:~Short" resolve="Short" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="GG2rC" id="2rCEsMWXzrD">
+    <property role="TrG5h" value="BwProcessInstance" />
+    <node concept="3clFbW" id="2rCEsMX0VNy" role="jymVt">
+      <node concept="3cqZAl" id="2rCEsMX0VN$" role="3clF45" />
+      <node concept="3Tm1VV" id="2rCEsMX0VN_" role="1B3o_S" />
+      <node concept="3clFbS" id="2rCEsMX0VNA" role="3clF47">
+        <node concept="3clFbF" id="2rCEsMX0VUg" role="3cqZAp">
+          <node concept="37vLTI" id="2rCEsMX0W3d" role="3clFbG">
+            <node concept="2ShNRf" id="2rCEsMX0W4O" role="37vLTx">
+              <node concept="HV5vD" id="2rCEsMX0YTh" role="2ShVmc">
+                <ref role="HV5vE" node="2rCEsMX0P6Y" resolve="BwProcessInstance.ProcessInstanceCompositeKey" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="2rCEsMX0VVA" role="37vLTJ">
+              <node concept="Xjq3P" id="2rCEsMX0VUf" role="2Oq$k0" />
+              <node concept="GJxQI" id="2rCEsMX0W1J" role="2OqNvi">
+                <ref role="GJxQD" node="2rCEsMX0QGl" resolve="compositeKey" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFb_" id="2rCEsMX10Be" role="jymVt">
+      <property role="TrG5h" value="toString" />
+      <node concept="3uibUv" id="2rCEsMX10Zl" role="3clF45">
+        <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+      </node>
+      <node concept="3Tm1VV" id="2rCEsMX10Bh" role="1B3o_S" />
+      <node concept="3clFbS" id="2rCEsMX10Bi" role="3clF47">
+        <node concept="3cpWs6" id="2rCEsMX11fd" role="3cqZAp">
+          <node concept="3cpWs3" id="2rCEsMX11fe" role="3cqZAk">
+            <node concept="3cpWs3" id="2rCEsMX11fi" role="3uHU7B">
+              <node concept="3cpWs3" id="2rCEsMX11fj" role="3uHU7B">
+                <node concept="Xl_RD" id="2rCEsMX11fk" role="3uHU7B">
+                  <property role="Xl_RC" value="BwProcessInstance Id Number: " />
+                </node>
+                <node concept="2OqwBi" id="2rCEsMX11fl" role="3uHU7w">
+                  <node concept="2OqwBi" id="2rCEsMX11fm" role="2Oq$k0">
+                    <node concept="Xjq3P" id="2rCEsMX11fn" role="2Oq$k0" />
+                    <node concept="GJxQI" id="2rCEsMX11fo" role="2OqNvi">
+                      <ref role="GJxQD" node="2rCEsMX0QGl" resolve="compositeKey" />
+                    </node>
+                  </node>
+                  <node concept="GJxQI" id="2rCEsMX11fp" role="2OqNvi">
+                    <ref role="GJxQD" node="2rCEsMX0P77" resolve="idNumber" />
+                  </node>
+                </node>
+              </node>
+              <node concept="Xl_RD" id="2rCEsMX11fq" role="3uHU7w">
+                <property role="Xl_RC" value=" Client " />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="2rCEsMX14zu" role="3uHU7w">
+              <node concept="2OqwBi" id="2rCEsMX14jP" role="2Oq$k0">
+                <node concept="Xjq3P" id="2rCEsMX14et" role="2Oq$k0" />
+                <node concept="GJxQI" id="2rCEsMX14sh" role="2OqNvi">
+                  <ref role="GJxQD" node="2rCEsMX0QGl" resolve="compositeKey" />
+                </node>
+              </node>
+              <node concept="GJxQI" id="2rCEsMX14Gz" role="2OqNvi">
+                <ref role="GJxQD" node="2rCEsMX0P71" resolve="client" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="2rCEsMX10MK" role="2AJF6D">
+        <ref role="2AI5Lk" to="e2lb:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="2rCEsMX0Z5K" role="jymVt" />
+    <node concept="3Tm1VV" id="2rCEsMWXzrE" role="1B3o_S" />
+    <node concept="11HBgY" id="2rCEsMWXzrF" role="1_7FOF">
+      <ref role="11HSJC" to="8mn1:~Entity" resolve="Entity" />
+    </node>
+    <node concept="11HBgY" id="2rCEsMWXzrG" role="1_7FOF">
+      <ref role="11HSJC" to="8mn1:~Table" resolve="Table" />
+      <node concept="11HSJJ" id="2rCEsMWXzrH" role="11HSJE">
+        <ref role="11HlFK" to="8mn1:~Table.name()" resolve="name" />
+        <node concept="Xl_RD" id="2rCEsMWXzrI" role="11HlFM">
+          <property role="Xl_RC" value="TZ1850" />
+        </node>
+      </node>
+      <node concept="11HSJJ" id="2rCEsMWXzrJ" role="11HSJE">
+        <ref role="11HlFK" to="8mn1:~Table.schema()" resolve="schema" />
+        <node concept="Xl_RD" id="2rCEsMWXzrK" role="11HlFM">
+          <property role="Xl_RC" value="DEVELOP" />
+        </node>
+      </node>
+    </node>
+    <node concept="11HBgY" id="2rCEsMWXzrL" role="1_7FOF">
+      <ref role="11HSJC" to="8mn1:~Inheritance" resolve="Inheritance" />
+      <node concept="11HSJJ" id="2rCEsMWXzrM" role="11HSJE">
+        <ref role="11HlFK" to="8mn1:~Inheritance.strategy()" resolve="strategy" />
+        <node concept="Rm8GO" id="2rCEsMWXzrN" role="11HlFM">
+          <ref role="1Px2BO" to="8mn1:~InheritanceType" resolve="InheritanceType" />
+          <ref role="Rm8GQ" to="8mn1:~InheritanceType.SINGLE_TABLE" resolve="SINGLE_TABLE" />
+        </node>
+      </node>
+    </node>
+    <node concept="11HBgY" id="2rCEsMWXzrO" role="1_7FOF">
+      <ref role="11HSJC" to="8mn1:~DiscriminatorColumn" resolve="DiscriminatorColumn" />
+      <node concept="11HSJJ" id="2rCEsMWXzrP" role="11HSJE">
+        <ref role="11HlFK" to="8mn1:~DiscriminatorColumn.name()" resolve="name" />
+        <node concept="Xl_RD" id="2rCEsMWXzrQ" role="11HlFM">
+          <property role="Xl_RC" value="DA_CL_ACTIVITY" />
+        </node>
+      </node>
+    </node>
+    <node concept="11HBgY" id="2rCEsMX0S42" role="1_7FOF">
+      <ref role="11HSJC" to="8mn1:~Access" resolve="Access" />
+      <node concept="11HSJJ" id="2rCEsMX0S84" role="11HSJE">
+        <ref role="11HlFK" to="8mn1:~Access.value()" resolve="value" />
+        <node concept="Rm8GO" id="2rCEsMX0SoM" role="11HlFM">
+          <ref role="Rm8GQ" to="8mn1:~AccessType.FIELD" resolve="FIELD" />
+          <ref role="1Px2BO" to="8mn1:~AccessType" resolve="AccessType" />
+        </node>
+      </node>
+    </node>
+    <node concept="GGpVp" id="2rCEsMX0QGl" role="GGm2j">
+      <property role="TrG5h" value="compositeKey" />
+      <node concept="GJnRb" id="2rCEsMX0U1G" role="GJgAG">
+        <property role="TrG5h" value="ProcessInstanceCompositeKey" />
+        <node concept="3uibUv" id="2rCEsMX0Ues" role="GJnR6">
+          <ref role="3uigEE" node="2rCEsMX0P6Y" resolve="BwProcessInstance.ProcessInstanceCompositeKey" />
+        </node>
+      </node>
+      <node concept="11HBgY" id="2rCEsMX0Uyj" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~EmbeddedId" resolve="EmbeddedId" />
+      </node>
+    </node>
+    <node concept="GGpVp" id="2rCEsMWXzso" role="GGm2j">
+      <property role="TrG5h" value="addBusinessValue" />
+      <node concept="GJnRb" id="2rCEsMWXzsp" role="GJgAG">
+        <property role="TrG5h" value="AddBusinessValue" />
+        <node concept="3uibUv" id="2rCEsMWXzsq" role="GJnR6">
+          <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+        </node>
+      </node>
+      <node concept="11HBgY" id="2rCEsMWXzsr" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~Column" resolve="Column" />
+        <node concept="11HSJJ" id="2rCEsMWXzss" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~Column.name()" resolve="name" />
+          <node concept="Xl_RD" id="2rCEsMWXzst" role="11HlFM">
+            <property role="Xl_RC" value="ADD_BUSINESS_VALUE" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="GGpVp" id="2rCEsMWXzsu" role="GGm2j">
+      <property role="TrG5h" value="assignedToGroup" />
+      <node concept="GJnRb" id="2rCEsMWXzsv" role="GJgAG">
+        <property role="TrG5h" value="AssignedToGroup" />
+        <node concept="3uibUv" id="2rCEsMWXzsw" role="GJnR6">
+          <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+        </node>
+      </node>
+      <node concept="11HBgY" id="2rCEsMWXzsx" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~Column" resolve="Column" />
+        <node concept="11HSJJ" id="2rCEsMWXzsy" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~Column.name()" resolve="name" />
+          <node concept="Xl_RD" id="2rCEsMWXzsz" role="11HlFM">
+            <property role="Xl_RC" value="ASSIGNED_TO_GROUP" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="GGpVp" id="2rCEsMWXzs$" role="GGm2j">
+      <property role="TrG5h" value="assignedToOrg" />
+      <node concept="GJnRb" id="2rCEsMWXzs_" role="GJgAG">
+        <property role="TrG5h" value="AssignedToOrg" />
+        <node concept="3uibUv" id="2rCEsMWXzsA" role="GJnR6">
+          <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+        </node>
+      </node>
+      <node concept="11HBgY" id="2rCEsMWXzsB" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~Column" resolve="Column" />
+        <node concept="11HSJJ" id="2rCEsMWXzsC" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~Column.name()" resolve="name" />
+          <node concept="Xl_RD" id="2rCEsMWXzsD" role="11HlFM">
+            <property role="Xl_RC" value="ASSIGNED_TO_ORG" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="GGpVp" id="2rCEsMWXzsE" role="GGm2j">
+      <property role="TrG5h" value="assignedToUsers" />
+      <node concept="GJnRb" id="2rCEsMWXzsF" role="GJgAG">
+        <property role="TrG5h" value="AssignedToUsers" />
+        <node concept="3uibUv" id="2rCEsMWXzsG" role="GJnR6">
+          <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+        </node>
+      </node>
+      <node concept="11HBgY" id="2rCEsMWXzsH" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~Column" resolve="Column" />
+        <node concept="11HSJJ" id="2rCEsMWXzsI" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~Column.name()" resolve="name" />
+          <node concept="Xl_RD" id="2rCEsMWXzsJ" role="11HlFM">
+            <property role="Xl_RC" value="ASSIGNED_TO_USERS" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="GGpVp" id="2rCEsMWXzsK" role="GGm2j">
+      <property role="TrG5h" value="businessKeys" />
+      <node concept="GJnRb" id="2rCEsMWXzsL" role="GJgAG">
+        <property role="TrG5h" value="BusinessKeys" />
+        <node concept="3uibUv" id="2rCEsMWXzsM" role="GJnR6">
+          <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+        </node>
+      </node>
+      <node concept="11HBgY" id="2rCEsMWXzsN" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~Column" resolve="Column" />
+        <node concept="11HSJJ" id="2rCEsMWXzsO" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~Column.name()" resolve="name" />
+          <node concept="Xl_RD" id="2rCEsMWXzsP" role="11HlFM">
+            <property role="Xl_RC" value="BUSINESS_KEYS" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="GGpVp" id="2rCEsMWXzsQ" role="GGm2j">
+      <property role="TrG5h" value="changedBy" />
+      <node concept="GJnRb" id="2rCEsMWXzsR" role="GJgAG">
+        <property role="TrG5h" value="ChangedBy" />
+        <node concept="3uibUv" id="2rCEsMWXzsS" role="GJnR6">
+          <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+        </node>
+      </node>
+      <node concept="11HBgY" id="2rCEsMWXzsT" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~Column" resolve="Column" />
+        <node concept="11HSJJ" id="2rCEsMWXzsU" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~Column.name()" resolve="name" />
+          <node concept="Xl_RD" id="2rCEsMWXzsV" role="11HlFM">
+            <property role="Xl_RC" value="CHANGED_BY" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="GGpVp" id="2rCEsMWXzsW" role="GGm2j">
+      <property role="TrG5h" value="completedAt" />
+      <node concept="GJnRb" id="2rCEsMWXzsX" role="GJgAG">
+        <property role="TrG5h" value="CompletedAt" />
+        <node concept="3uibUv" id="2rCEsMWXzsY" role="GJnR6">
+          <ref role="3uigEE" to="26f1:~Timestamp" resolve="Timestamp" />
+        </node>
+      </node>
+      <node concept="11HBgY" id="2rCEsMWXzsZ" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~Column" resolve="Column" />
+        <node concept="11HSJJ" id="2rCEsMWXzt0" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~Column.name()" resolve="name" />
+          <node concept="Xl_RD" id="2rCEsMWXzt1" role="11HlFM">
+            <property role="Xl_RC" value="COMPLETED_AT" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="GGpVp" id="2rCEsMWXzt2" role="GGm2j">
+      <property role="TrG5h" value="createdAt" />
+      <node concept="GJnRb" id="2rCEsMWXzt3" role="GJgAG">
+        <property role="TrG5h" value="CreatedAt" />
+        <node concept="3uibUv" id="2rCEsMWXzt4" role="GJnR6">
+          <ref role="3uigEE" to="epq1:~BigDecimal" resolve="BigDecimal" />
+        </node>
+      </node>
+      <node concept="11HBgY" id="2rCEsMWXzt5" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~Column" resolve="Column" />
+        <node concept="11HSJJ" id="2rCEsMWXzt6" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~Column.name()" resolve="name" />
+          <node concept="Xl_RD" id="2rCEsMWXzt7" role="11HlFM">
+            <property role="Xl_RC" value="CREATED_AT" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="GGpVp" id="2rCEsMWXzt8" role="GGm2j">
+      <property role="TrG5h" value="createdBy" />
+      <node concept="GJnRb" id="2rCEsMWXzt9" role="GJgAG">
+        <property role="TrG5h" value="CreatedBy" />
+        <node concept="3uibUv" id="2rCEsMWXzta" role="GJnR6">
+          <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+        </node>
+      </node>
+      <node concept="11HBgY" id="2rCEsMWXztb" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~Column" resolve="Column" />
+        <node concept="11HSJJ" id="2rCEsMWXztc" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~Column.name()" resolve="name" />
+          <node concept="Xl_RD" id="2rCEsMWXztd" role="11HlFM">
+            <property role="Xl_RC" value="CREATED_BY" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="GGpVp" id="2rCEsMWXzte" role="GGm2j">
+      <property role="TrG5h" value="criticalTimestamp" />
+      <node concept="GJnRb" id="2rCEsMWXztf" role="GJgAG">
+        <property role="TrG5h" value="CriticalTimestamp" />
+        <node concept="3uibUv" id="2rCEsMWXztg" role="GJnR6">
+          <ref role="3uigEE" to="26f1:~Timestamp" resolve="Timestamp" />
+        </node>
+      </node>
+      <node concept="11HBgY" id="2rCEsMWXzth" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~Column" resolve="Column" />
+        <node concept="11HSJJ" id="2rCEsMWXzti" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~Column.name()" resolve="name" />
+          <node concept="Xl_RD" id="2rCEsMWXztj" role="11HlFM">
+            <property role="Xl_RC" value="CRITICAL_TIMESTAMP" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="GGpVp" id="2rCEsMWXztk" role="GGm2j">
+      <property role="TrG5h" value="daClActivity" />
+      <node concept="GJnRb" id="2rCEsMWXztl" role="GJgAG">
+        <property role="TrG5h" value="DaClActivity" />
+        <node concept="3uibUv" id="2rCEsMWXztm" role="GJnR6">
+          <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+        </node>
+      </node>
+      <node concept="11HBgY" id="2rCEsMWXztn" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~Column" resolve="Column" />
+        <node concept="11HSJJ" id="2rCEsMWXzto" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~Column.name()" resolve="name" />
+          <node concept="Xl_RD" id="2rCEsMWXztp" role="11HlFM">
+            <property role="Xl_RC" value="DA_CL_ACTIVITY" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="GGpVp" id="2rCEsMWXztq" role="GGm2j">
+      <property role="TrG5h" value="dueTimestamp" />
+      <node concept="GJnRb" id="2rCEsMWXztr" role="GJgAG">
+        <property role="TrG5h" value="DueTimestamp" />
+        <node concept="3uibUv" id="2rCEsMWXzts" role="GJnR6">
+          <ref role="3uigEE" to="26f1:~Timestamp" resolve="Timestamp" />
+        </node>
+      </node>
+      <node concept="11HBgY" id="2rCEsMWXztt" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~Column" resolve="Column" />
+        <node concept="11HSJJ" id="2rCEsMWXztu" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~Column.name()" resolve="name" />
+          <node concept="Xl_RD" id="2rCEsMWXztv" role="11HlFM">
+            <property role="Xl_RC" value="DUE_TIMESTAMP" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="GGpVp" id="2rCEsMWXztw" role="GGm2j">
+      <property role="TrG5h" value="errorLevel" />
+      <node concept="GJnRb" id="2rCEsMWXztx" role="GJgAG">
+        <property role="TrG5h" value="ErrorLevel" />
+        <node concept="3uibUv" id="2rCEsMWXzty" role="GJnR6">
+          <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+        </node>
+      </node>
+      <node concept="11HBgY" id="2rCEsMWXztz" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~Column" resolve="Column" />
+        <node concept="11HSJJ" id="2rCEsMWXzt$" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~Column.name()" resolve="name" />
+          <node concept="Xl_RD" id="2rCEsMWXzt_" role="11HlFM">
+            <property role="Xl_RC" value="ERROR_LEVEL" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="GGpVp" id="2rCEsMWXztA" role="GGm2j">
+      <property role="TrG5h" value="lastChange" />
+      <node concept="GJnRb" id="2rCEsMWXztB" role="GJgAG">
+        <property role="TrG5h" value="LastChange" />
+        <node concept="3uibUv" id="2rCEsMWXztC" role="GJnR6">
+          <ref role="3uigEE" to="epq1:~BigDecimal" resolve="BigDecimal" />
+        </node>
+      </node>
+      <node concept="11HBgY" id="2rCEsMWXztD" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~Column" resolve="Column" />
+        <node concept="11HSJJ" id="2rCEsMWXztE" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~Column.name()" resolve="name" />
+          <node concept="Xl_RD" id="2rCEsMWXztF" role="11HlFM">
+            <property role="Xl_RC" value="LAST_CHANGE" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="GGpVp" id="2rCEsMWXztG" role="GGm2j">
+      <property role="TrG5h" value="lcValidStateA" />
+      <node concept="GJnRb" id="2rCEsMWXztH" role="GJgAG">
+        <property role="TrG5h" value="LcValidStateA" />
+        <node concept="3uibUv" id="2rCEsMWXztI" role="GJnR6">
+          <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+        </node>
+      </node>
+      <node concept="11HBgY" id="2rCEsMWXztJ" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~Column" resolve="Column" />
+        <node concept="11HSJJ" id="2rCEsMWXztK" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~Column.name()" resolve="name" />
+          <node concept="Xl_RD" id="2rCEsMWXztL" role="11HlFM">
+            <property role="Xl_RC" value="LC_VALID_STATE_A" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="GGpVp" id="2rCEsMWXztM" role="GGm2j">
+      <property role="TrG5h" value="maxDuration" />
+      <node concept="GJnRb" id="2rCEsMWXztN" role="GJgAG">
+        <property role="TrG5h" value="MaxDuration" />
+        <node concept="10Oyi0" id="2rCEsMWXztO" role="GJnR6" />
+      </node>
+      <node concept="11HBgY" id="2rCEsMWXztP" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~Column" resolve="Column" />
+        <node concept="11HSJJ" id="2rCEsMWXztQ" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~Column.name()" resolve="name" />
+          <node concept="Xl_RD" id="2rCEsMWXztR" role="11HlFM">
+            <property role="Xl_RC" value="MAX_DURATION" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="GGpVp" id="2rCEsMWXztS" role="GGm2j">
+      <property role="TrG5h" value="notYetAccessed" />
+      <node concept="GJnRb" id="2rCEsMWXztT" role="GJgAG">
+        <property role="TrG5h" value="NotYetAccessed" />
+        <node concept="3uibUv" id="2rCEsMWXztU" role="GJnR6">
+          <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+        </node>
+      </node>
+      <node concept="11HBgY" id="2rCEsMWXztV" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~Column" resolve="Column" />
+        <node concept="11HSJJ" id="2rCEsMWXztW" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~Column.name()" resolve="name" />
+          <node concept="Xl_RD" id="2rCEsMWXztX" role="11HlFM">
+            <property role="Xl_RC" value="NOT_YET_ACCESSED" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="GGpVp" id="2rCEsMWXztY" role="GGm2j">
+      <property role="TrG5h" value="occLcStates" />
+      <node concept="GJnRb" id="2rCEsMWXztZ" role="GJgAG">
+        <property role="TrG5h" value="OccLcStates" />
+        <node concept="3uibUv" id="2rCEsMWXzu0" role="GJnR6">
+          <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+        </node>
+      </node>
+      <node concept="11HBgY" id="2rCEsMWXzu1" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~Column" resolve="Column" />
+        <node concept="11HSJJ" id="2rCEsMWXzu2" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~Column.name()" resolve="name" />
+          <node concept="Xl_RD" id="2rCEsMWXzu3" role="11HlFM">
+            <property role="Xl_RC" value="OCC_LC_STATES" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="GGpVp" id="2rCEsMWXzu4" role="GGm2j">
+      <property role="TrG5h" value="priority" />
+      <node concept="GJnRb" id="2rCEsMWXzu5" role="GJgAG">
+        <property role="TrG5h" value="Priority" />
+        <node concept="10N3zO" id="2rCEsMWXzu6" role="GJnR6" />
+      </node>
+      <node concept="11HBgY" id="2rCEsMWXzu7" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~Column" resolve="Column" />
+        <node concept="11HSJJ" id="2rCEsMWXzu8" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~Column.name()" resolve="name" />
+          <node concept="Xl_RD" id="2rCEsMWXzu9" role="11HlFM">
+            <property role="Xl_RC" value="PRIORITY" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="GGpVp" id="2rCEsMWXzua" role="GGm2j">
+      <property role="TrG5h" value="startTimestamp" />
+      <node concept="GJnRb" id="2rCEsMWXzub" role="GJgAG">
+        <property role="TrG5h" value="StartTimestamp" />
+        <node concept="3uibUv" id="2rCEsMWXzuc" role="GJnR6">
+          <ref role="3uigEE" to="26f1:~Timestamp" resolve="Timestamp" />
+        </node>
+      </node>
+      <node concept="11HBgY" id="2rCEsMWXzud" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~Column" resolve="Column" />
+        <node concept="11HSJJ" id="2rCEsMWXzue" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~Column.name()" resolve="name" />
+          <node concept="Xl_RD" id="2rCEsMWXzuf" role="11HlFM">
+            <property role="Xl_RC" value="START_TIMESTAMP" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="GGpVp" id="2rCEsMWXzug" role="GGm2j">
+      <property role="TrG5h" value="state" />
+      <node concept="GJnRb" id="2rCEsMWXzuh" role="GJgAG">
+        <property role="TrG5h" value="State" />
+        <node concept="3uibUv" id="2rCEsMWXzui" role="GJnR6">
+          <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+        </node>
+      </node>
+      <node concept="11HBgY" id="2rCEsMWXzuj" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~Column" resolve="Column" />
+        <node concept="11HSJJ" id="2rCEsMWXzuk" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~Column.name()" resolve="name" />
+          <node concept="Xl_RD" id="2rCEsMWXzul" role="11HlFM">
+            <property role="Xl_RC" value="STATE" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="GGpVp" id="2rCEsMWXzum" role="GGm2j">
+      <property role="TrG5h" value="takenAt" />
+      <node concept="GJnRb" id="2rCEsMWXzun" role="GJgAG">
+        <property role="TrG5h" value="TakenAt" />
+        <node concept="3uibUv" id="2rCEsMWXzuo" role="GJnR6">
+          <ref role="3uigEE" to="26f1:~Timestamp" resolve="Timestamp" />
+        </node>
+      </node>
+      <node concept="11HBgY" id="2rCEsMWXzup" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~Column" resolve="Column" />
+        <node concept="11HSJJ" id="2rCEsMWXzuq" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~Column.name()" resolve="name" />
+          <node concept="Xl_RD" id="2rCEsMWXzur" role="11HlFM">
+            <property role="Xl_RC" value="TAKEN_AT" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="GGpVp" id="2rCEsMWXzus" role="GGm2j">
+      <property role="TrG5h" value="takenBy" />
+      <node concept="GJnRb" id="2rCEsMWXzut" role="GJgAG">
+        <property role="TrG5h" value="TakenBy" />
+        <node concept="3uibUv" id="2rCEsMWXzuu" role="GJnR6">
+          <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+        </node>
+      </node>
+      <node concept="11HBgY" id="2rCEsMWXzuv" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~Column" resolve="Column" />
+        <node concept="11HSJJ" id="2rCEsMWXzuw" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~Column.name()" resolve="name" />
+          <node concept="Xl_RD" id="2rCEsMWXzux" role="11HlFM">
+            <property role="Xl_RC" value="TAKEN_BY" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="GGpVp" id="2rCEsMWXzuy" role="GGm2j">
+      <property role="TrG5h" value="technicalKeys" />
+      <node concept="GJnRb" id="2rCEsMWXzuz" role="GJgAG">
+        <property role="TrG5h" value="TechnicalKeys" />
+        <node concept="3uibUv" id="2rCEsMWXzu$" role="GJnR6">
+          <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+        </node>
+      </node>
+      <node concept="11HBgY" id="2rCEsMWXzu_" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~Column" resolve="Column" />
+        <node concept="11HSJJ" id="2rCEsMWXzuA" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~Column.name()" resolve="name" />
+          <node concept="Xl_RD" id="2rCEsMWXzuB" role="11HlFM">
+            <property role="Xl_RC" value="TECHNICAL_KEYS" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="GGpVp" id="2rCEsMWXzuC" role="GGm2j">
+      <property role="TrG5h" value="trxToStart" />
+      <node concept="GJnRb" id="2rCEsMWXzuD" role="GJgAG">
+        <property role="TrG5h" value="TrxToStart" />
+        <node concept="3uibUv" id="2rCEsMWXzuE" role="GJnR6">
+          <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+        </node>
+      </node>
+      <node concept="11HBgY" id="2rCEsMWXzuF" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~Column" resolve="Column" />
+        <node concept="11HSJJ" id="2rCEsMWXzuG" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~Column.name()" resolve="name" />
+          <node concept="Xl_RD" id="2rCEsMWXzuH" role="11HlFM">
+            <property role="Xl_RC" value="TRX_TO_START" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="GGpVp" id="2rCEsMWXzuI" role="GGm2j">
+      <property role="TrG5h" value="validFrom" />
+      <node concept="GJnRb" id="2rCEsMWXzuJ" role="GJgAG">
+        <property role="TrG5h" value="ValidFrom" />
+        <node concept="3uibUv" id="2rCEsMWXzuK" role="GJnR6">
+          <ref role="3uigEE" to="k7g3:~Date" resolve="Date" />
+        </node>
+      </node>
+      <node concept="11HBgY" id="2rCEsMWXzuL" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~Column" resolve="Column" />
+        <node concept="11HSJJ" id="2rCEsMWXzuM" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~Column.name()" resolve="name" />
+          <node concept="Xl_RD" id="2rCEsMWXzuN" role="11HlFM">
+            <property role="Xl_RC" value="VALID_FROM" />
+          </node>
+        </node>
+      </node>
+      <node concept="11HBgY" id="2rCEsMWXzuO" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~Temporal" resolve="Temporal" />
+        <node concept="11HSJJ" id="2rCEsMWXzuP" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~Temporal.value()" resolve="value" />
+          <node concept="Rm8GO" id="2rCEsMWXzuQ" role="11HlFM">
+            <ref role="1Px2BO" to="8mn1:~TemporalType" resolve="TemporalType" />
+            <ref role="Rm8GQ" to="8mn1:~TemporalType.DATE" resolve="DATE" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="GGpVp" id="2rCEsMWXzuR" role="GGm2j">
+      <property role="TrG5h" value="warningTimestamp" />
+      <node concept="GJnRb" id="2rCEsMWXzuS" role="GJgAG">
+        <property role="TrG5h" value="WarningTimestamp" />
+        <node concept="3uibUv" id="2rCEsMWXzuT" role="GJnR6">
+          <ref role="3uigEE" to="26f1:~Timestamp" resolve="Timestamp" />
+        </node>
+      </node>
+      <node concept="11HBgY" id="2rCEsMWXzuU" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~Column" resolve="Column" />
+        <node concept="11HSJJ" id="2rCEsMWXzuV" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~Column.name()" resolve="name" />
+          <node concept="Xl_RD" id="2rCEsMWXzuW" role="11HlFM">
+            <property role="Xl_RC" value="WARNING_TIMESTAMP" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="GGpVp" id="2rCEsMX8oL8" role="GGm2j">
+      <property role="TrG5h" value="workflowProcess" />
+      <node concept="GJnRb" id="2rCEsMX8oL9" role="GJgAG">
+        <property role="TrG5h" value="WorkflowProcess" />
+        <node concept="3uibUv" id="2rCEsMX8sur" role="GJnR6">
+          <ref role="3uigEE" node="7_bkmIAFgHL" resolve="WorkflowProcess" />
+        </node>
+      </node>
+      <node concept="11HBgY" id="2rCEsMX8qfU" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~ManyToOne" resolve="ManyToOne" />
+      </node>
+      <node concept="11HBgY" id="2rCEsMX8qum" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~JoinColumns" resolve="JoinColumns" />
+      </node>
+    </node>
+    <node concept="GGpVp" id="2rCEsMX83Zd" role="GGm2j">
+      <property role="TrG5h" value="fkTz1840client" />
+      <node concept="GJnRb" id="2rCEsMX83Ze" role="GJgAG">
+        <property role="TrG5h" value="FkTz1840client" />
+        <node concept="3uibUv" id="2rCEsMX83Zf" role="GJnR6">
+          <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+        </node>
+      </node>
+      <node concept="11HBgY" id="2rCEsMX83Zg" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~Column" resolve="Column" />
+        <node concept="11HSJJ" id="2rCEsMX83Zh" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~Column.name()" resolve="name" />
+          <node concept="Xl_RD" id="2rCEsMX83Zi" role="11HlFM">
+            <property role="Xl_RC" value="FK_TZ1840CLIENT" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="GGpVp" id="2rCEsMX83Zj" role="GGm2j">
+      <property role="TrG5h" value="fkTz1840idNumber" />
+      <node concept="GJnRb" id="2rCEsMX83Zk" role="GJgAG">
+        <property role="TrG5h" value="FkTz1840idNumber" />
+        <node concept="10Oyi0" id="2rCEsMX83Zl" role="GJnR6" />
+      </node>
+      <node concept="11HBgY" id="2rCEsMX83Zm" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~Column" resolve="Column" />
+        <node concept="11HSJJ" id="2rCEsMX83Zn" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~Column.name()" resolve="name" />
+          <node concept="Xl_RD" id="2rCEsMX83Zo" role="11HlFM">
+            <property role="Xl_RC" value="FK_TZ1840ID_NUMBER" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="GGpVp" id="2rCEsMX83Zp" role="GGm2j">
+      <property role="TrG5h" value="fkTz1840version" />
+      <node concept="GJnRb" id="2rCEsMX83Zq" role="GJgAG">
+        <property role="TrG5h" value="FkTz1840version" />
+        <node concept="10N3zO" id="2rCEsMX83Zr" role="GJnR6" />
+      </node>
+      <node concept="11HBgY" id="2rCEsMX83Zs" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~Column" resolve="Column" />
+        <node concept="11HSJJ" id="2rCEsMX83Zt" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~Column.name()" resolve="name" />
+          <node concept="Xl_RD" id="2rCEsMX83Zu" role="11HlFM">
+            <property role="Xl_RC" value="FK_TZ1840VERSION" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="GGpVp" id="2rCEsMX83Zv" role="GGm2j">
+      <property role="TrG5h" value="fk0tz1850client" />
+      <node concept="GJnRb" id="2rCEsMX83Zw" role="GJgAG">
+        <property role="TrG5h" value="Fk0tz1850client" />
+        <node concept="3uibUv" id="2rCEsMX83Zx" role="GJnR6">
+          <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+        </node>
+      </node>
+      <node concept="11HBgY" id="2rCEsMX83Zy" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~Column" resolve="Column" />
+        <node concept="11HSJJ" id="2rCEsMX83Zz" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~Column.name()" resolve="name" />
+          <node concept="Xl_RD" id="2rCEsMX83Z$" role="11HlFM">
+            <property role="Xl_RC" value="FK0TZ1850CLIENT" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="GGpVp" id="2rCEsMX83Z_" role="GGm2j">
+      <property role="TrG5h" value="fk0tz1850idNumber" />
+      <node concept="GJnRb" id="2rCEsMX83ZA" role="GJgAG">
+        <property role="TrG5h" value="Fk0tz1850idNumber" />
+        <node concept="10Oyi0" id="2rCEsMX83ZB" role="GJnR6" />
+      </node>
+      <node concept="11HBgY" id="2rCEsMX83ZC" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~Column" resolve="Column" />
+        <node concept="11HSJJ" id="2rCEsMX83ZD" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~Column.name()" resolve="name" />
+          <node concept="Xl_RD" id="2rCEsMX83ZE" role="11HlFM">
+            <property role="Xl_RC" value="FK0TZ1850ID_NUMBER" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1DC2fI" id="2rCEsMX0P6Y" role="1DC6iq">
+      <property role="TrG5h" value="ProcessInstanceCompositeKey" />
+      <node concept="11HBgY" id="2rCEsMX0P6Z" role="1DC5oS">
+        <ref role="11HSJC" to="8mn1:~Embeddable" resolve="Embeddable" />
+      </node>
+      <node concept="3Tm1VV" id="2rCEsMX0P70" role="1B3o_S" />
+      <node concept="GGpVp" id="2rCEsMX0P71" role="1DC5oT">
+        <property role="TrG5h" value="client" />
+        <node concept="11HBgY" id="2rCEsMX0P72" role="11Hwta">
+          <ref role="11HSJC" to="8mn1:~Column" resolve="Column" />
+          <node concept="11HSJJ" id="2rCEsMX0P73" role="11HSJE">
+            <ref role="11HlFK" to="8mn1:~Column.name()" resolve="name" />
+            <node concept="Xl_RD" id="2rCEsMX0P74" role="11HlFM">
+              <property role="Xl_RC" value="CLIENT" />
+            </node>
+          </node>
+        </node>
+        <node concept="GJnRb" id="2rCEsMX0P75" role="GJgAG">
+          <property role="TrG5h" value="Client" />
+          <node concept="3uibUv" id="2rCEsMX0P76" role="GJnR6">
+            <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+          </node>
+        </node>
+      </node>
+      <node concept="GGpVp" id="2rCEsMX0P77" role="1DC5oT">
+        <property role="TrG5h" value="idNumber" />
+        <node concept="11HBgY" id="2rCEsMX0P78" role="11Hwta">
+          <ref role="11HSJC" to="8mn1:~Column" resolve="Column" />
+          <node concept="11HSJJ" id="2rCEsMX0P79" role="11HSJE">
+            <ref role="11HlFK" to="8mn1:~Column.name()" resolve="name" />
+            <node concept="Xl_RD" id="2rCEsMX0P7a" role="11HlFM">
+              <property role="Xl_RC" value="ID_NUMBER" />
+            </node>
+          </node>
+        </node>
+        <node concept="GJnRb" id="2rCEsMX0P7b" role="GJgAG">
+          <property role="TrG5h" value="IdNumber" />
+          <node concept="3uibUv" id="2rCEsMX0P7c" role="GJnR6">
+            <ref role="3uigEE" to="e2lb:~Integer" resolve="Integer" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="GG2rC" id="2rCEsMWXzrZ">
+    <property role="TrG5h" value="ProcessInstance" />
+    <node concept="3Tm1VV" id="2rCEsMWXzs0" role="1B3o_S" />
+    <node concept="11HBgY" id="2rCEsMWXzs1" role="1_7FOF">
+      <ref role="11HSJC" to="8mn1:~Entity" resolve="Entity" />
+    </node>
+    <node concept="11HBgY" id="2rCEsMWXzs2" role="1_7FOF">
+      <ref role="11HSJC" to="8mn1:~DiscriminatorValue" resolve="DiscriminatorValue" />
+      <node concept="11HSJJ" id="2rCEsMWXzs3" role="11HSJE">
+        <ref role="11HlFK" to="8mn1:~DiscriminatorValue.value()" resolve="value" />
+        <node concept="Xl_RD" id="2rCEsMWXzs4" role="11HlFM">
+          <property role="Xl_RC" value="P" />
+        </node>
+      </node>
+    </node>
+    <node concept="GGpVp" id="2rCEsMWXzuX" role="GGm2j">
+      <property role="TrG5h" value="activityInstanceWorkItems" />
+      <node concept="GJnRb" id="2rCEsMWXzuY" role="GJgAG">
+        <property role="TrG5h" value="ActivityInstanceWorkItems" />
+        <node concept="3uibUv" id="2rCEsMWXzv0" role="GJnR6">
+          <ref role="3uigEE" to="k7g3:~List" resolve="List" />
+          <node concept="3uibUv" id="2rCEsMX1bb9" role="11_B2D">
+            <ref role="3uigEE" node="2rCEsMX18O2" resolve="ActivityInstance" />
+          </node>
+        </node>
+      </node>
+      <node concept="11HBgY" id="2rCEsMWXzv2" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~OneToMany" resolve="OneToMany" />
+        <node concept="11HSJJ" id="2rCEsMWXzv3" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~OneToMany.mappedBy()" resolve="mappedBy" />
+          <node concept="Xl_RD" id="2rCEsMWXzv4" role="11HlFM">
+            <property role="Xl_RC" value="processInstance" />
+          </node>
+        </node>
+        <node concept="11HSJJ" id="2rCEsMWXzv5" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~OneToMany.fetch()" resolve="fetch" />
+          <node concept="Rm8GO" id="2rCEsMWXzv6" role="11HlFM">
+            <ref role="1Px2BO" to="8mn1:~FetchType" resolve="FetchType" />
+            <ref role="Rm8GQ" to="8mn1:~FetchType.LAZY" resolve="LAZY" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="GGpVp" id="2rCEsMWXzv7" role="GGm2j">
+      <property role="TrG5h" value="workflowProcess" />
+      <node concept="GJnRb" id="2rCEsMWXzv8" role="GJgAG">
+        <property role="TrG5h" value="WorkflowProcess" />
+        <node concept="3uibUv" id="2rCEsMWXzv9" role="GJnR6">
+          <ref role="3uigEE" node="7_bkmIAFgHL" resolve="WorkflowProcess" />
+        </node>
+      </node>
+      <node concept="11HBgY" id="2rCEsMWXzva" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~ManyToOne" resolve="ManyToOne" />
+      </node>
+      <node concept="11HBgY" id="2rCEsMWXzvb" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~JoinColumns" resolve="JoinColumns" />
+        <node concept="11HSJJ" id="2rCEsMWXzvc" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~JoinColumns.value()" resolve="value" />
+          <node concept="3v$fQo" id="2rCEsMWXzvd" role="11HlFM" />
+        </node>
+      </node>
+    </node>
+    <node concept="GGpVp" id="2rCEsMWXzve" role="GGm2j">
+      <property role="TrG5h" value="processInstanceStates" />
+      <node concept="GJnRb" id="2rCEsMWXzvf" role="GJgAG">
+        <property role="TrG5h" value="ProcessInstanceStates" />
+        <node concept="3uibUv" id="2rCEsMWXzvh" role="GJnR6">
+          <ref role="3uigEE" to="k7g3:~List" resolve="List" />
+          <node concept="3uibUv" id="2rCEsMX1bk$" role="11_B2D">
+            <ref role="3uigEE" node="2rCEsMX1amP" resolve="ProcessInstanceState" />
+          </node>
+        </node>
+      </node>
+      <node concept="11HBgY" id="2rCEsMWXzvj" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~OneToMany" resolve="OneToMany" />
+        <node concept="11HSJJ" id="2rCEsMWXzvk" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~OneToMany.mappedBy()" resolve="mappedBy" />
+          <node concept="Xl_RD" id="2rCEsMWXzvl" role="11HlFM">
+            <property role="Xl_RC" value="processInstance" />
+          </node>
+        </node>
+        <node concept="11HSJJ" id="2rCEsMWXzvm" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~OneToMany.fetch()" resolve="fetch" />
+          <node concept="Rm8GO" id="2rCEsMWXzvn" role="11HlFM">
+            <ref role="1Px2BO" to="8mn1:~FetchType" resolve="FetchType" />
+            <ref role="Rm8GQ" to="8mn1:~FetchType.LAZY" resolve="LAZY" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3uibUv" id="2rCEsMWXzvo" role="1zkMxy">
+      <ref role="3uigEE" node="2rCEsMWXzrD" resolve="BwProcessInstance" />
+    </node>
+  </node>
+  <node concept="GG2rC" id="2rCEsMX18O2">
+    <property role="TrG5h" value="ActivityInstance" />
+    <node concept="3Tm1VV" id="2rCEsMX18O3" role="1B3o_S" />
+    <node concept="11HBgY" id="2rCEsMX18O4" role="1_7FOF">
+      <ref role="11HSJC" to="8mn1:~Entity" resolve="Entity" />
+    </node>
+    <node concept="11HBgY" id="2rCEsMX18O5" role="1_7FOF">
+      <ref role="11HSJC" to="8mn1:~DiscriminatorValue" resolve="DiscriminatorValue" />
+      <node concept="11HSJJ" id="2rCEsMX18O6" role="11HSJE">
+        <ref role="11HlFK" to="8mn1:~DiscriminatorValue.value()" resolve="value" />
+        <node concept="Xl_RD" id="2rCEsMX18O7" role="11HlFM">
+          <property role="Xl_RC" value="A" />
+        </node>
+      </node>
+    </node>
+    <node concept="11HBgY" id="2rCEsMX18O8" role="1_7FOF">
+      <ref role="11HSJC" to="8mn1:~NamedQuery" resolve="NamedQuery" />
+      <node concept="11HSJJ" id="2rCEsMX18O9" role="11HSJE">
+        <ref role="11HlFK" to="8mn1:~NamedQuery.name()" resolve="name" />
+        <node concept="Xl_RD" id="2rCEsMX18Oa" role="11HlFM">
+          <property role="Xl_RC" value="ActivityInstance.findAll" />
+        </node>
+      </node>
+      <node concept="11HSJJ" id="2rCEsMX18Ob" role="11HSJE">
+        <ref role="11HlFK" to="8mn1:~NamedQuery.query()" resolve="query" />
+        <node concept="Xl_RD" id="2rCEsMX18Oc" role="11HlFM">
+          <property role="Xl_RC" value="SELECT t FROM ActivityInstance t" />
+        </node>
+      </node>
+    </node>
+    <node concept="GGpVp" id="2rCEsMX18Od" role="GGm2j">
+      <property role="TrG5h" value="processInstance" />
+      <node concept="GJnRb" id="2rCEsMX18Oe" role="GJgAG">
+        <property role="TrG5h" value="ProcessInstance" />
+        <node concept="3uibUv" id="2rCEsMX18Of" role="GJnR6">
+          <ref role="3uigEE" node="2rCEsMWXzrZ" resolve="ProcessInstance" />
+        </node>
+      </node>
+      <node concept="11HBgY" id="2rCEsMX18Og" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~ManyToOne" resolve="ManyToOne" />
+      </node>
+      <node concept="11HBgY" id="2rCEsMX18Oh" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~JoinColumns" resolve="JoinColumns" />
+        <node concept="11HSJJ" id="2rCEsMX18Oi" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~JoinColumns.value()" resolve="value" />
+          <node concept="3v$fQo" id="2rCEsMX18Oj" role="11HlFM" />
+        </node>
+      </node>
+    </node>
+    <node concept="GGpVp" id="2rCEsMX18Ok" role="GGm2j">
+      <property role="TrG5h" value="workflowActivity" />
+      <node concept="GJnRb" id="2rCEsMX18Ol" role="GJgAG">
+        <property role="TrG5h" value="WorkflowActivity" />
+        <node concept="3uibUv" id="2rCEsMX18Om" role="GJnR6" />
+      </node>
+      <node concept="11HBgY" id="2rCEsMX18On" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~ManyToOne" resolve="ManyToOne" />
+      </node>
+      <node concept="11HBgY" id="2rCEsMX18Oo" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~JoinColumns" resolve="JoinColumns" />
+        <node concept="11HSJJ" id="2rCEsMX18Op" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~JoinColumns.value()" resolve="value" />
+          <node concept="3v$fQo" id="2rCEsMX18Oq" role="11HlFM" />
+        </node>
+      </node>
+    </node>
+    <node concept="GGpVp" id="2rCEsMX18Or" role="GGm2j">
+      <property role="TrG5h" value="activityInstanceUserAssignments" />
+      <node concept="GJnRb" id="2rCEsMX18Os" role="GJgAG">
+        <property role="TrG5h" value="ActivityInstanceUserAssignments" />
+        <node concept="3uibUv" id="2rCEsMX18Ou" role="GJnR6">
+          <ref role="3uigEE" to="k7g3:~List" resolve="List" />
+          <node concept="3uibUv" id="2rCEsMX18Ov" role="11_B2D" />
+        </node>
+      </node>
+      <node concept="11HBgY" id="2rCEsMX18Ow" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~OneToMany" resolve="OneToMany" />
+        <node concept="11HSJJ" id="2rCEsMX18Ox" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~OneToMany.mappedBy()" resolve="mappedBy" />
+          <node concept="Xl_RD" id="2rCEsMX18Oy" role="11HlFM">
+            <property role="Xl_RC" value="activityInstance" />
+          </node>
+        </node>
+        <node concept="11HSJJ" id="2rCEsMX18Oz" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~OneToMany.fetch()" resolve="fetch" />
+          <node concept="Rm8GO" id="2rCEsMX18O$" role="11HlFM">
+            <ref role="1Px2BO" to="8mn1:~FetchType" resolve="FetchType" />
+            <ref role="Rm8GQ" to="8mn1:~FetchType.LAZY" resolve="LAZY" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="GGpVp" id="2rCEsMX18O_" role="GGm2j">
+      <property role="TrG5h" value="activityInstanceTeamAssignments" />
+      <node concept="GJnRb" id="2rCEsMX18OA" role="GJgAG">
+        <property role="TrG5h" value="ActivityInstanceTeamAssignments" />
+        <node concept="3uibUv" id="2rCEsMX18OC" role="GJnR6">
+          <ref role="3uigEE" to="k7g3:~List" resolve="List" />
+          <node concept="3uibUv" id="2rCEsMX18OD" role="11_B2D" />
+        </node>
+      </node>
+      <node concept="11HBgY" id="2rCEsMX18OE" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~OneToMany" resolve="OneToMany" />
+        <node concept="11HSJJ" id="2rCEsMX18OF" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~OneToMany.mappedBy()" resolve="mappedBy" />
+          <node concept="Xl_RD" id="2rCEsMX18OG" role="11HlFM">
+            <property role="Xl_RC" value="activityInstance" />
+          </node>
+        </node>
+        <node concept="11HSJJ" id="2rCEsMX18OH" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~OneToMany.fetch()" resolve="fetch" />
+          <node concept="Rm8GO" id="2rCEsMX18OI" role="11HlFM">
+            <ref role="1Px2BO" to="8mn1:~FetchType" resolve="FetchType" />
+            <ref role="Rm8GQ" to="8mn1:~FetchType.LAZY" resolve="LAZY" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="GGpVp" id="2rCEsMX18OJ" role="GGm2j">
+      <property role="TrG5h" value="workflowRemark" />
+      <node concept="GJnRb" id="2rCEsMX18OK" role="GJgAG">
+        <property role="TrG5h" value="WorkflowRemark" />
+        <node concept="3uibUv" id="2rCEsMX18OL" role="GJnR6" />
+      </node>
+      <node concept="11HBgY" id="2rCEsMX18OM" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~OneToOne" resolve="OneToOne" />
+        <node concept="11HSJJ" id="2rCEsMX18ON" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~OneToOne.mappedBy()" resolve="mappedBy" />
+          <node concept="Xl_RD" id="2rCEsMX18OO" role="11HlFM">
+            <property role="Xl_RC" value="activityInstance" />
+          </node>
+        </node>
+        <node concept="11HSJJ" id="2rCEsMX18OP" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~OneToOne.fetch()" resolve="fetch" />
+          <node concept="Rm8GO" id="2rCEsMX18OQ" role="11HlFM">
+            <ref role="1Px2BO" to="8mn1:~FetchType" resolve="FetchType" />
+            <ref role="Rm8GQ" to="8mn1:~FetchType.LAZY" resolve="LAZY" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3uibUv" id="2rCEsMX18OR" role="1zkMxy">
+      <ref role="3uigEE" node="2rCEsMWXzrD" resolve="BwProcessInstance" />
+    </node>
+  </node>
+  <node concept="GG2rC" id="2rCEsMX1amP">
+    <property role="TrG5h" value="ProcessInstanceState" />
+    <node concept="3Tm1VV" id="2rCEsMX1amQ" role="1B3o_S" />
+    <node concept="11HBgY" id="2rCEsMX1amR" role="1_7FOF">
+      <ref role="11HSJC" to="8mn1:~Entity" resolve="Entity" />
+    </node>
+    <node concept="11HBgY" id="2rCEsMX1amS" role="1_7FOF">
+      <ref role="11HSJC" to="8mn1:~Table" resolve="Table" />
+      <node concept="11HSJJ" id="2rCEsMX1amT" role="11HSJE">
+        <ref role="11HlFK" to="8mn1:~Table.name()" resolve="name" />
+        <node concept="Xl_RD" id="2rCEsMX1amU" role="11HlFM">
+          <property role="Xl_RC" value="TZ2280" />
+        </node>
+      </node>
+      <node concept="11HSJJ" id="2rCEsMX1amV" role="11HSJE">
+        <ref role="11HlFK" to="8mn1:~Table.schema()" resolve="schema" />
+        <node concept="Xl_RD" id="2rCEsMX1amW" role="11HlFM">
+          <property role="Xl_RC" value="DEVELOP" />
+        </node>
+      </node>
+    </node>
+    <node concept="11HBgY" id="2rCEsMX1amX" role="1_7FOF">
+      <ref role="11HSJC" to="8mn1:~IdClass" resolve="IdClass" />
+      <node concept="11HSJJ" id="2rCEsMX1amY" role="11HSJE">
+        <ref role="11HlFK" to="8mn1:~IdClass.value()" resolve="value" />
+        <node concept="3VsKOn" id="2rCEsMX1amZ" role="11HlFM" />
+      </node>
+    </node>
+    <node concept="11HBgY" id="2rCEsMX1an0" role="1_7FOF">
+      <ref role="11HSJC" to="8mn1:~NamedQuery" resolve="NamedQuery" />
+      <node concept="11HSJJ" id="2rCEsMX1an1" role="11HSJE">
+        <ref role="11HlFK" to="8mn1:~NamedQuery.name()" resolve="name" />
+        <node concept="Xl_RD" id="2rCEsMX1an2" role="11HlFM">
+          <property role="Xl_RC" value="ProcessInstanceState.findAll" />
+        </node>
+      </node>
+      <node concept="11HSJJ" id="2rCEsMX1an3" role="11HSJE">
+        <ref role="11HlFK" to="8mn1:~NamedQuery.query()" resolve="query" />
+        <node concept="Xl_RD" id="2rCEsMX1an4" role="11HlFM">
+          <property role="Xl_RC" value="SELECT t FROM ProcessInstanceState t" />
+        </node>
+      </node>
+    </node>
+    <node concept="GGpVp" id="2rCEsMX1an5" role="GGm2j">
+      <property role="TrG5h" value="fkTz1850client" />
+      <node concept="GJnRb" id="2rCEsMX1an6" role="GJgAG">
+        <property role="TrG5h" value="FkTz1850client" />
+        <node concept="3uibUv" id="2rCEsMX1an7" role="GJnR6">
+          <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+        </node>
+      </node>
+      <node concept="11HBgY" id="2rCEsMX1an8" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~Column" resolve="Column" />
+        <node concept="11HSJJ" id="2rCEsMX1an9" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~Column.name()" resolve="name" />
+          <node concept="Xl_RD" id="2rCEsMX1ana" role="11HlFM">
+            <property role="Xl_RC" value="FK_TZ1850CLIENT" />
+          </node>
+        </node>
+      </node>
+      <node concept="11HBgY" id="2rCEsMX1anb" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~Id" resolve="Id" />
+      </node>
+    </node>
+    <node concept="GGpVp" id="2rCEsMX1anc" role="GGm2j">
+      <property role="TrG5h" value="fkTz1850idNumber" />
+      <node concept="GJnRb" id="2rCEsMX1and" role="GJgAG">
+        <property role="TrG5h" value="FkTz1850idNumber" />
+        <node concept="10Oyi0" id="2rCEsMX1ane" role="GJnR6" />
+      </node>
+      <node concept="11HBgY" id="2rCEsMX1anf" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~Column" resolve="Column" />
+        <node concept="11HSJJ" id="2rCEsMX1ang" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~Column.name()" resolve="name" />
+          <node concept="Xl_RD" id="2rCEsMX1anh" role="11HlFM">
+            <property role="Xl_RC" value="FK_TZ1850ID_NUMBER" />
+          </node>
+        </node>
+      </node>
+      <node concept="11HBgY" id="2rCEsMX1ani" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~Id" resolve="Id" />
+      </node>
+    </node>
+    <node concept="GGpVp" id="2rCEsMX1anj" role="GGm2j">
+      <property role="TrG5h" value="relativeNumber" />
+      <node concept="GJnRb" id="2rCEsMX1ank" role="GJgAG">
+        <property role="TrG5h" value="RelativeNumber" />
+        <node concept="10N3zO" id="2rCEsMX1anl" role="GJnR6" />
+      </node>
+      <node concept="11HBgY" id="2rCEsMX1anm" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~Column" resolve="Column" />
+        <node concept="11HSJJ" id="2rCEsMX1ann" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~Column.name()" resolve="name" />
+          <node concept="Xl_RD" id="2rCEsMX1ano" role="11HlFM">
+            <property role="Xl_RC" value="RELATIVE_NUMBER" />
+          </node>
+        </node>
+      </node>
+      <node concept="11HBgY" id="2rCEsMX1anp" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~Id" resolve="Id" />
+      </node>
+    </node>
+    <node concept="GGpVp" id="2rCEsMX1anq" role="GGm2j">
+      <property role="TrG5h" value="processInstance" />
+      <node concept="GJnRb" id="2rCEsMX1anr" role="GJgAG">
+        <property role="TrG5h" value="ProcessInstance" />
+        <node concept="3uibUv" id="2rCEsMX1ans" role="GJnR6">
+          <ref role="3uigEE" node="2rCEsMWXzrZ" resolve="ProcessInstance" />
+        </node>
+      </node>
+      <node concept="11HBgY" id="2rCEsMX1ant" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~ManyToOne" resolve="ManyToOne" />
+      </node>
+      <node concept="11HBgY" id="2rCEsMX1anu" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~JoinColumns" resolve="JoinColumns" />
+        <node concept="11HSJJ" id="2rCEsMX1anv" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~JoinColumns.value()" resolve="value" />
+          <node concept="3v$fQo" id="2rCEsMX1anw" role="11HlFM" />
+        </node>
+      </node>
+    </node>
+    <node concept="GGpVp" id="2rCEsMX1anx" role="GGm2j">
+      <property role="TrG5h" value="processStateAttributeValues" />
+      <node concept="GJnRb" id="2rCEsMX1any" role="GJgAG">
+        <property role="TrG5h" value="ProcessStateAttributeValues" />
+        <node concept="3uibUv" id="2rCEsMX1an$" role="GJnR6">
+          <ref role="3uigEE" to="k7g3:~List" resolve="List" />
+          <node concept="3uibUv" id="2rCEsMX1an_" role="11_B2D" />
+        </node>
+      </node>
+      <node concept="11HBgY" id="2rCEsMX1anA" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~OneToMany" resolve="OneToMany" />
+        <node concept="11HSJJ" id="2rCEsMX1anB" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~OneToMany.mappedBy()" resolve="mappedBy" />
+          <node concept="Xl_RD" id="2rCEsMX1anC" role="11HlFM">
+            <property role="Xl_RC" value="processInstanceState" />
+          </node>
+        </node>
+        <node concept="11HSJJ" id="2rCEsMX1anD" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~OneToMany.fetch()" resolve="fetch" />
+          <node concept="Rm8GO" id="2rCEsMX1anE" role="11HlFM">
+            <ref role="1Px2BO" to="8mn1:~FetchType" resolve="FetchType" />
+            <ref role="Rm8GQ" to="8mn1:~FetchType.LAZY" resolve="LAZY" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="GGpVp" id="2rCEsMX1anF" role="GGm2j">
+      <property role="TrG5h" value="processStateAttributeValuesEDI" />
+      <node concept="GJnRb" id="2rCEsMX1anG" role="GJgAG">
+        <property role="TrG5h" value="ProcessStateAttributeValuesEDI" />
+        <node concept="3uibUv" id="2rCEsMX1anI" role="GJnR6">
+          <ref role="3uigEE" to="k7g3:~List" resolve="List" />
+          <node concept="3uibUv" id="2rCEsMX1anJ" role="11_B2D" />
+        </node>
+      </node>
+      <node concept="11HBgY" id="2rCEsMX1anK" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~OneToMany" resolve="OneToMany" />
+        <node concept="11HSJJ" id="2rCEsMX1anL" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~OneToMany.mappedBy()" resolve="mappedBy" />
+          <node concept="Xl_RD" id="2rCEsMX1anM" role="11HlFM">
+            <property role="Xl_RC" value="processInstanceState" />
+          </node>
+        </node>
+        <node concept="11HSJJ" id="2rCEsMX1anN" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~OneToMany.fetch()" resolve="fetch" />
+          <node concept="Rm8GO" id="2rCEsMX1anO" role="11HlFM">
+            <ref role="1Px2BO" to="8mn1:~FetchType" resolve="FetchType" />
+            <ref role="Rm8GQ" to="8mn1:~FetchType.LAZY" resolve="LAZY" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="GGpVp" id="2rCEsMX1anP" role="GGm2j">
+      <property role="TrG5h" value="businessRemark" />
+      <node concept="GJnRb" id="2rCEsMX1anQ" role="GJgAG">
+        <property role="TrG5h" value="BusinessRemark" />
+        <node concept="3uibUv" id="2rCEsMX1anR" role="GJnR6">
+          <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+        </node>
+      </node>
+      <node concept="11HBgY" id="2rCEsMX1anS" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~Column" resolve="Column" />
+        <node concept="11HSJJ" id="2rCEsMX1anT" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~Column.name()" resolve="name" />
+          <node concept="Xl_RD" id="2rCEsMX1anU" role="11HlFM">
+            <property role="Xl_RC" value="BUSINESS_REMARK" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="GGpVp" id="2rCEsMX1anV" role="GGm2j">
+      <property role="TrG5h" value="changedBy" />
+      <node concept="GJnRb" id="2rCEsMX1anW" role="GJgAG">
+        <property role="TrG5h" value="ChangedBy" />
+        <node concept="3uibUv" id="2rCEsMX1anX" role="GJnR6">
+          <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+        </node>
+      </node>
+      <node concept="11HBgY" id="2rCEsMX1anY" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~Column" resolve="Column" />
+        <node concept="11HSJJ" id="2rCEsMX1anZ" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~Column.name()" resolve="name" />
+          <node concept="Xl_RD" id="2rCEsMX1ao0" role="11HlFM">
+            <property role="Xl_RC" value="CHANGED_BY" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="GGpVp" id="2rCEsMX1ao1" role="GGm2j">
+      <property role="TrG5h" value="createdBy" />
+      <node concept="GJnRb" id="2rCEsMX1ao2" role="GJgAG">
+        <property role="TrG5h" value="CreatedBy" />
+        <node concept="3uibUv" id="2rCEsMX1ao3" role="GJnR6">
+          <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+        </node>
+      </node>
+      <node concept="11HBgY" id="2rCEsMX1ao4" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~Column" resolve="Column" />
+        <node concept="11HSJJ" id="2rCEsMX1ao5" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~Column.name()" resolve="name" />
+          <node concept="Xl_RD" id="2rCEsMX1ao6" role="11HlFM">
+            <property role="Xl_RC" value="CREATED_BY" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="GGpVp" id="2rCEsMX1ao7" role="GGm2j">
+      <property role="TrG5h" value="lastChange" />
+      <node concept="GJnRb" id="2rCEsMX1ao8" role="GJgAG">
+        <property role="TrG5h" value="LastChange" />
+        <node concept="3uibUv" id="2rCEsMX1ao9" role="GJnR6">
+          <ref role="3uigEE" to="epq1:~BigDecimal" resolve="BigDecimal" />
+        </node>
+      </node>
+      <node concept="11HBgY" id="2rCEsMX1aoa" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~Column" resolve="Column" />
+        <node concept="11HSJJ" id="2rCEsMX1aob" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~Column.name()" resolve="name" />
+          <node concept="Xl_RD" id="2rCEsMX1aoc" role="11HlFM">
+            <property role="Xl_RC" value="LAST_CHANGE" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="GGpVp" id="2rCEsMX1aod" role="GGm2j">
+      <property role="TrG5h" value="msgCreation" />
+      <node concept="GJnRb" id="2rCEsMX1aoe" role="GJgAG">
+        <property role="TrG5h" value="MsgCreation" />
+        <node concept="3uibUv" id="2rCEsMX1aof" role="GJnR6">
+          <ref role="3uigEE" to="epq1:~BigDecimal" resolve="BigDecimal" />
+        </node>
+      </node>
+      <node concept="11HBgY" id="2rCEsMX1aog" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~Column" resolve="Column" />
+        <node concept="11HSJJ" id="2rCEsMX1aoh" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~Column.name()" resolve="name" />
+          <node concept="Xl_RD" id="2rCEsMX1aoi" role="11HlFM">
+            <property role="Xl_RC" value="MSG_CREATION" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="GGpVp" id="2rCEsMX1aoj" role="GGm2j">
+      <property role="TrG5h" value="stateName" />
+      <node concept="GJnRb" id="2rCEsMX1aok" role="GJgAG">
+        <property role="TrG5h" value="StateName" />
+        <node concept="3uibUv" id="2rCEsMX1aol" role="GJnR6">
+          <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+        </node>
+      </node>
+      <node concept="11HBgY" id="2rCEsMX1aom" role="11Hwta">
+        <ref role="11HSJC" to="8mn1:~Column" resolve="Column" />
+        <node concept="11HSJJ" id="2rCEsMX1aon" role="11HSJE">
+          <ref role="11HlFK" to="8mn1:~Column.name()" resolve="name" />
+          <node concept="Xl_RD" id="2rCEsMX1aoo" role="11HlFM">
+            <property role="Xl_RC" value="STATE_NAME" />
           </node>
         </node>
       </node>
