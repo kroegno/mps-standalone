@@ -12,7 +12,6 @@
     <import index="me44" ref="r:b60e2512-a024-4e7c-8244-4b09423e8f93(com.hlag.workflow.catalog.domain)" />
     <import index="k7g3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
     <import index="26f1" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.sql(JDK/java.sql@java_stub)" />
-    <import index="tplq" ref="99e16e2b-b314-4f3e-9fbd-7cf8a5c94f9a/f:java_stub#99e16e2b-b314-4f3e-9fbd-7cf8a5c94f9a#com.hlag.workflow.domain.model2(com.hlag.entitylang.sandbox/com.hlag.workflow.domain.model2@java_stub)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -549,25 +548,6 @@
         </node>
       </node>
     </node>
-    <node concept="GGpVp" id="2BnoH1SOvlp" role="GGm2j">
-      <property role="TrG5h" value="workflowActivity" />
-      <node concept="GJnRb" id="2BnoH1SOvlq" role="GJgAG">
-        <property role="TrG5h" value="WorkflowActivity" />
-        <node concept="3uibUv" id="2BnoH1SPSSv" role="GJnR6">
-          <ref role="3uigEE" to="tplq:~WorkflowActivity" resolve="WorkflowActivity" />
-        </node>
-      </node>
-      <node concept="11HBgY" id="2BnoH1SOvls" role="11Hwta">
-        <ref role="11HSJC" to="8mn1:~ManyToOne" resolve="ManyToOne" />
-      </node>
-      <node concept="11HBgY" id="2BnoH1SOvlt" role="11Hwta">
-        <ref role="11HSJC" to="8mn1:~JoinColumns" resolve="JoinColumns" />
-        <node concept="11HSJJ" id="2BnoH1SOvlu" role="11HSJE">
-          <ref role="11HlFK" to="8mn1:~JoinColumns.value()" resolve="value" />
-          <node concept="3v$fQo" id="2BnoH1SOvlv" role="11HlFM" />
-        </node>
-      </node>
-    </node>
     <node concept="GGpVp" id="2BnoH1SOvlw" role="GGm2j">
       <property role="TrG5h" value="activityInstanceUserAssignments" />
       <node concept="GJnRb" id="2BnoH1SOvlx" role="GJgAG">
@@ -618,31 +598,6 @@
         <node concept="11HSJJ" id="2BnoH1SOvlK" role="11HSJE">
           <ref role="11HlFK" to="8mn1:~OneToMany.fetch()" resolve="fetch" />
           <node concept="Rm8GO" id="2BnoH1SOvlL" role="11HlFM">
-            <ref role="1Px2BO" to="8mn1:~FetchType" resolve="FetchType" />
-            <ref role="Rm8GQ" to="8mn1:~FetchType.LAZY" resolve="LAZY" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="GGpVp" id="2BnoH1SOvlM" role="GGm2j">
-      <property role="TrG5h" value="workflowRemark" />
-      <node concept="GJnRb" id="2BnoH1SOvlN" role="GJgAG">
-        <property role="TrG5h" value="WorkflowRemark" />
-        <node concept="3uibUv" id="2BnoH1SPToJ" role="GJnR6">
-          <ref role="3uigEE" to="tplq:~WorkflowRemark" resolve="WorkflowRemark" />
-        </node>
-      </node>
-      <node concept="11HBgY" id="2BnoH1SOvlP" role="11Hwta">
-        <ref role="11HSJC" to="8mn1:~OneToOne" resolve="OneToOne" />
-        <node concept="11HSJJ" id="2BnoH1SOvlQ" role="11HSJE">
-          <ref role="11HlFK" to="8mn1:~OneToOne.mappedBy()" resolve="mappedBy" />
-          <node concept="Xl_RD" id="2BnoH1SOvlR" role="11HlFM">
-            <property role="Xl_RC" value="activityInstance" />
-          </node>
-        </node>
-        <node concept="11HSJJ" id="2BnoH1SOvlS" role="11HSJE">
-          <ref role="11HlFK" to="8mn1:~OneToOne.fetch()" resolve="fetch" />
-          <node concept="Rm8GO" id="2BnoH1SOvlT" role="11HlFM">
             <ref role="1Px2BO" to="8mn1:~FetchType" resolve="FetchType" />
             <ref role="Rm8GQ" to="8mn1:~FetchType.LAZY" resolve="LAZY" />
           </node>
