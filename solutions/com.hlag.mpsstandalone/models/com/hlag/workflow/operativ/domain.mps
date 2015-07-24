@@ -731,7 +731,7 @@
     <node concept="GGpVp" id="2BnoH1SOw$A" role="GGm2j">
       <property role="TrG5h" value="compositeKey" />
       <node concept="GJnRb" id="2BnoH1SOw$B" role="GJgAG">
-        <property role="TrG5h" value="ProcessInstanceCompositeKey" />
+        <property role="TrG5h" value="CompositeKey" />
         <node concept="3uibUv" id="2BnoH1SOw$C" role="GJnR6">
           <ref role="3uigEE" node="2BnoH1SOwB_" resolve="ProcessInstanceBase.ProcessInstanceCompositeKey" />
         </node>

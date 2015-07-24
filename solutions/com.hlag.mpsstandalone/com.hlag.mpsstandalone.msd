@@ -8,8 +8,6 @@
   <stubModelEntries>
     <stubModelEntry path="${extendedjava}/jars/eclipselink.jar" />
     <stubModelEntry path="${extendedjava}/jars/javax.persistence_2.1.0.v201304241213.jar" />
-    <stubModelEntry path="C:/Users/kroegno/GitHub/mpsstandalone/lib/db2jcc.jar" />
-    <stubModelEntry path="C:/Users/kroegno/GitHub/mpsstandalone/lib/db2jcc_license_cisuz.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>

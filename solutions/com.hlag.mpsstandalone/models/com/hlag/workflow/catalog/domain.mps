@@ -218,7 +218,7 @@
     <node concept="GGpVp" id="7_bkmIAFgPi" role="GGm2j">
       <property role="TrG5h" value="compositeKey" />
       <node concept="GJnRb" id="7_bkmIAFgPj" role="GJgAG">
-        <property role="TrG5h" value="WorkflowProcessCompositeKey" />
+        <property role="TrG5h" value="CompositeKey" />
         <node concept="3uibUv" id="7_bkmIAG9ts" role="GJnR6">
           <ref role="3uigEE" node="7_bkmIAFh6N" resolve="WorkflowProcess.WorkflowProcessCompositeKey" />
         </node>

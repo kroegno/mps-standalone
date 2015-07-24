@@ -265,9 +265,6 @@
       <concept id="5274548285729820580" name="com.hlag.entitylang.structure.MultiLineStringLiteral" flags="ng" index="gCbCs">
         <child id="5274548285729863077" name="lines" index="gC00t" />
       </concept>
-      <concept id="1517936465230542825" name="com.hlag.entitylang.structure.FieldType" flags="ig" index="GJnN5">
-        <reference id="1517936465230542826" name="declaration" index="GJnN6" />
-      </concept>
       <concept id="1517936465230616194" name="com.hlag.entitylang.structure.EntityFieldRefOp" flags="ng" index="GJxQI">
         <reference id="1517936465230616197" name="field" index="GJxQD" />
       </concept>
@@ -1415,8 +1412,8 @@
         <node concept="3cpWs8" id="2rCEsMX1qOo" role="3cqZAp">
           <node concept="3cpWsn" id="2rCEsMX1qOr" role="3cpWs9">
             <property role="TrG5h" value="workflowProcessKey" />
-            <node concept="GJnN5" id="2rCEsMX1qOm" role="1tU5fm">
-              <ref role="GJnN6" to="me44:7_bkmIAFgPj" resolve="WorkflowProcessCompositeKey" />
+            <node concept="3uibUv" id="$mK6TdP8lU" role="1tU5fm">
+              <ref role="3uigEE" to="me44:7_bkmIAFh6N" resolve="WorkflowProcess.WorkflowProcessCompositeKey" />
             </node>
             <node concept="2ShNRf" id="2rCEsMX1reS" role="33vP2m">
               <node concept="HV5vD" id="2rCEsMX1sJM" role="2ShVmc">
@@ -1599,8 +1596,8 @@
         <node concept="3cpWs8" id="2BnoH1SPoYk" role="3cqZAp">
           <node concept="3cpWsn" id="2BnoH1SPoYl" role="3cpWs9">
             <property role="TrG5h" value="workflowProcessKey" />
-            <node concept="GJnN5" id="2BnoH1SPoYm" role="1tU5fm">
-              <ref role="GJnN6" to="me44:7_bkmIAFgPj" resolve="WorkflowProcessCompositeKey" />
+            <node concept="3uibUv" id="$mK6TdP8jv" role="1tU5fm">
+              <ref role="3uigEE" to="me44:7_bkmIAFh6N" resolve="WorkflowProcess.WorkflowProcessCompositeKey" />
             </node>
             <node concept="2ShNRf" id="2BnoH1SPoYn" role="33vP2m">
               <node concept="HV5vD" id="2BnoH1SPoYo" role="2ShVmc">
@@ -1795,8 +1792,8 @@
         <node concept="3cpWs8" id="2BnoH1SPz$2" role="3cqZAp">
           <node concept="3cpWsn" id="2BnoH1SPz$3" role="3cpWs9">
             <property role="TrG5h" value="workflowProcessKey" />
-            <node concept="GJnN5" id="2BnoH1SPz$4" role="1tU5fm">
-              <ref role="GJnN6" to="me44:7_bkmIAFgPj" resolve="WorkflowProcessCompositeKey" />
+            <node concept="3uibUv" id="$mK6TdOYbi" role="1tU5fm">
+              <ref role="3uigEE" to="me44:7_bkmIAFh6N" resolve="WorkflowProcess.WorkflowProcessCompositeKey" />
             </node>
             <node concept="2ShNRf" id="2BnoH1SPz$5" role="33vP2m">
               <node concept="HV5vD" id="2BnoH1SPz$6" role="2ShVmc">
@@ -1992,8 +1989,8 @@
         <node concept="3cpWs8" id="2BnoH1SPGDw" role="3cqZAp">
           <node concept="3cpWsn" id="2BnoH1SPGDx" role="3cpWs9">
             <property role="TrG5h" value="workflowProcessKey" />
-            <node concept="GJnN5" id="2BnoH1SPGDy" role="1tU5fm">
-              <ref role="GJnN6" to="me44:7_bkmIAFgPj" resolve="WorkflowProcessCompositeKey" />
+            <node concept="3uibUv" id="$mK6TdOXM$" role="1tU5fm">
+              <ref role="3uigEE" to="me44:7_bkmIAFh6N" resolve="WorkflowProcess.WorkflowProcessCompositeKey" />
             </node>
             <node concept="2ShNRf" id="2BnoH1SPGDz" role="33vP2m">
               <node concept="HV5vD" id="2BnoH1SPGD$" role="2ShVmc">
@@ -2209,8 +2206,8 @@
           <node concept="3cpWs8" id="2BnoH1SUGwt" role="3cqZAp">
             <node concept="3cpWsn" id="2BnoH1SUGwu" role="3cpWs9">
               <property role="TrG5h" value="workflowProcessKey" />
-              <node concept="GJnN5" id="2BnoH1SUGwv" role="1tU5fm">
-                <ref role="GJnN6" to="me44:7_bkmIAFgPj" resolve="WorkflowProcessCompositeKey" />
+              <node concept="3uibUv" id="$mK6TdP3fO" role="1tU5fm">
+                <ref role="3uigEE" to="me44:7_bkmIAFh6N" resolve="WorkflowProcess.WorkflowProcessCompositeKey" />
               </node>
               <node concept="2ShNRf" id="2BnoH1SUGww" role="33vP2m">
                 <node concept="HV5vD" id="2BnoH1SUGwx" role="2ShVmc">
