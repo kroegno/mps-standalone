@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:ff8de627-7d15-44f1-9d6d-7c5aa8758895(com.hlag.security.domain)">
+  <persistence version="9" />
+  <languages />
+  <imports>
+    <import index="w2cr" ref="r:77b8edcd-5db4-4e28-899f-c6da26b5e2d4(com.hlag.entitylang.generator.template.main@generator)" implicit="true" />
+  </imports>
+  <registry>
+    <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
+      <concept id="9032177546942789835" name="jetbrains.mps.lang.generator.structure.TrivialModelId" flags="ng" index="2$$0lk">
+        <property id="9032177546942789839" name="modelName" index="2$$0lg" />
+      </concept>
+      <concept id="9032177546941420365" name="jetbrains.mps.lang.generator.structure.ExportEntry" flags="ng" index="2$UQVi">
+        <reference id="9032177546941634307" name="label" index="2$VUEs" />
+        <child id="9032177546942803148" name="outputModel" index="2$$55j" />
+        <child id="9032177546941575212" name="dataKeeper" index="2$VCQN" />
+        <child id="9032177546941575209" name="outputNode" index="2$VCQQ" />
+        <child id="9032177546941575207" name="inputNode" index="2$VCQS" />
+      </concept>
+      <concept id="9032177546941580387" name="jetbrains.mps.lang.generator.structure.TrivialNodeId" flags="ng" index="2$VJBW">
+        <property id="9032177546941580392" name="nodeId" index="2$VJBR" />
+        <property id="9032177546941580390" name="conceptId" index="2$VJBT" />
+      </concept>
+    </language>
+    <language id="5f362b6a-7593-4d33-922a-7554535c0063" name="com.hlag.entitylang">
+      <concept id="4161610248909487979" name="com.hlag.entitylang.structure.Field2ClassKeeper" flags="ng" index="3q7JOj">
+        <property id="4161610248909488083" name="className" index="3q7JQF" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="2$UQVi" id="2BnoH1SQ0nt">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2BnoH1SQ0nu" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.security.domain" />
+    </node>
+    <node concept="2$VJBW" id="2BnoH1SQ0nv" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="2803677464846817260" />
+    </node>
+    <node concept="2$VJBW" id="2BnoH1SQ0nw" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="3014987123067979138" />
+    </node>
+    <node concept="3q7JOj" id="2BnoH1SQ0ns" role="2$VCQN">
+      <property role="3q7JQF" value="com.hlag.security.domain.DialogHeader.Client" />
+    </node>
+  </node>
+  <node concept="2$UQVi" id="2BnoH1SQ0pF">
+    <ref role="2$VUEs" to="w2cr:3B10BzzS0vx" resolve="FieldDeclarationEXPORT" />
+    <node concept="2$$0lk" id="2BnoH1SQ0pG" role="2$$55j">
+      <property role="2$$0lg" value="com.hlag.security.domain" />
+    </node>
+    <node concept="2$VJBW" id="2BnoH1SQ0pH" role="2$VCQS">
+      <property role="2$VJBT" value="com.hlag.entitylang.structure.FieldTypeDeclaration" />
+      <property role="2$VJBR" value="2803677464846818990" />
+    </node>
+    <node concept="2$VJBW" id="2BnoH1SQ0pI" role="2$VCQQ">
+      <property role="2$VJBT" value="jetbrains.mps.baseLanguage.structure.ClassConcept" />
+      <property role="2$VJBR" value="3014987123067979280" />
+    </node>
+    <node concept="3q7JOj" id="2BnoH1SQ0pE" role="2$VCQN">
+      <property role="3q7JQF" value="com.hlag.security.domain.DialogHeader.UserID" />
+    </node>
+  </node>
+</model>
+

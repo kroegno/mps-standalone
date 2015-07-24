@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:0757cf2b-b103-4f51-a823-cb7c5109f7bd(com.hlag.mpsstandalone.workflow.test)">
+<model ref="r:0757cf2b-b103-4f51-a823-cb7c5109f7bd(com.hlag.workflow.test.test)">
   <persistence version="9" />
   <languages>
     <use id="a846e4ee-ad86-4f44-b75a-4763a2ae30f6" name="com.hlag.jpql" version="-1" />
@@ -13,12 +13,16 @@
     <import index="8mn1" ref="b263f292-6e43-46d0-829c-100beca2960f/f:java_stub#b263f292-6e43-46d0-829c-100beca2960f#javax.persistence(com.hlag.entitylang.runtime/javax.persistence@java_stub)" />
     <import index="ixkh" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.security(JDK/java.security@java_stub)" />
     <import index="k7g3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
-    <import index="me44" ref="r:b60e2512-a024-4e7c-8244-4b09423e8f93(com.hlag.mpsstandalone.workflow.domain)" />
+    <import index="me44" ref="r:b60e2512-a024-4e7c-8244-4b09423e8f93(com.hlag.workflow.catalog.domain)" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
     <import index="8vib" ref="86441d7a-e194-42da-81a5-2161ec62a379/f:java_stub#86441d7a-e194-42da-81a5-2161ec62a379#org.junit(MPS.Workbench/org.junit@java_stub)" />
     <import index="c440" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#com.sun.tools.javadoc.resources(JDK/com.sun.tools.javadoc.resources@java_stub)" />
-    <import index="18oj" ref="r:19bfac2d-6c1a-4165-a425-e1dedad0ffa5(com.hlag.mpsstandalone.security.domain)" />
-    <import index="caaz" ref="r:bd77c06f-0aec-40b3-ac5f-59e44d900413(com.hlag.mpsstandalone.workflow.infrastructure.persistence)" />
+    <import index="18oj" ref="r:19bfac2d-6c1a-4165-a425-e1dedad0ffa5(com.hlag.security.domain)" />
+    <import index="caaz" ref="r:bd77c06f-0aec-40b3-ac5f-59e44d900413(com.hlag.workflow.catalog.persistence)" />
+    <import index="2ik8" ref="r:d8a99c5e-473d-4817-b9cd-0438f52d3d09(com.hlag.workflow.operativ.domain)" />
+    <import index="z1ni" ref="r:c7998590-e9ca-40d5-a4b7-fa495cbd8d12(com.hlag.workflow.operativ.persistence)" />
+    <import index="43eo" ref="r:c3e150db-d2d3-4b0a-b86a-96ff16a8e76e(com.hlag.workflow.operativ.applicationservice)" />
+    <import index="5dng" ref="r:e9235800-acbd-4fc1-a896-17934c8a240e(com.hlag.workflow.catalog.applicationservice)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -1336,7 +1340,7 @@
     <node concept="3Tm1VV" id="6YrIhiElh_M" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="2rCEsMWSGF4">
-    <property role="TrG5h" value="ListWorkflowProcessInstancesTest" />
+    <property role="TrG5h" value="ProcessInstanceTest" />
     <node concept="3clFb_" id="2rCEsMWSH99" role="jymVt">
       <property role="TrG5h" value="test" />
       <property role="DiZV1" value="false" />
@@ -1355,7 +1359,7 @@
       <node concept="3cqZAl" id="2rCEsMWSH9d" role="3clF45" />
     </node>
     <node concept="3clFb_" id="2rCEsMWSH9e" role="jymVt">
-      <property role="TrG5h" value="testRepositoryListProcessInstancesByProcessId" />
+      <property role="TrG5h" value="testProcessInstanceRepository_ListProcessInstancesByWorkflowProcessCompositeKey" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="2AHcQZ" id="2rCEsMWSH9f" role="2AJF6D">
@@ -1369,14 +1373,14 @@
             <node concept="3uibUv" id="2rCEsMWSH9j" role="1tU5fm">
               <ref role="3uigEE" to="k7g3:~List" resolve="List" />
               <node concept="3uibUv" id="2rCEsMWSH9k" role="11_B2D">
-                <ref role="3uigEE" to="me44:2rCEsMWXzrZ" resolve="ProcessInstance" />
+                <ref role="3uigEE" to="2ik8:2BnoH1SOvj5" resolve="ProcessInstance" />
               </node>
             </node>
             <node concept="2ShNRf" id="2rCEsMWSHac" role="33vP2m">
               <node concept="1pGfFk" id="2rCEsMWSHad" role="2ShVmc">
                 <ref role="37wK5l" to="k7g3:~ArrayList.&lt;init&gt;()" resolve="ArrayList" />
                 <node concept="3uibUv" id="2rCEsMWSH9m" role="1pMfVU">
-                  <ref role="3uigEE" to="me44:2rCEsMWXzrZ" resolve="ProcessInstance" />
+                  <ref role="3uigEE" to="2ik8:2BnoH1SOvj5" resolve="ProcessInstance" />
                 </node>
               </node>
             </node>
@@ -1403,9 +1407,6 @@
         </node>
         <node concept="3clFbF" id="2rCEsMX1sWp" role="3cqZAp">
           <node concept="37vLTI" id="2rCEsMX1tuN" role="3clFbG">
-            <node concept="3cmrfG" id="2rCEsMX1tDD" role="37vLTx">
-              <property role="3cmrfH" value="111546348" />
-            </node>
             <node concept="2OqwBi" id="2rCEsMX1t5q" role="37vLTJ">
               <node concept="37vLTw" id="2rCEsMX1sWn" role="2Oq$k0">
                 <ref role="3cqZAo" node="2rCEsMX1qOr" resolve="workflowProcessKey" />
@@ -1413,6 +1414,9 @@
               <node concept="GJxQI" id="2rCEsMX1tev" role="2OqNvi">
                 <ref role="GJxQD" to="me44:7_bkmIAFh6S" resolve="idNumber" />
               </node>
+            </node>
+            <node concept="3cmrfG" id="2BnoH1SPPaq" role="37vLTx">
+              <property role="3cmrfH" value="6" />
             </node>
           </node>
         </node>
@@ -1458,7 +1462,7 @@
         <node concept="3clFbF" id="2rCEsMWSH9B" role="3cqZAp">
           <node concept="37vLTI" id="2rCEsMX1qct" role="3clFbG">
             <node concept="Xl_RD" id="2rCEsMX1qhu" role="37vLTx">
-              <property role="Xl_RC" value="M" />
+              <property role="Xl_RC" value="B" />
             </node>
             <node concept="2OqwBi" id="2rCEsMWSHar" role="37vLTJ">
               <node concept="37vLTw" id="2rCEsMWSHaq" role="2Oq$k0">
@@ -1474,13 +1478,13 @@
         <node concept="3cpWs8" id="2rCEsMWSH9F" role="3cqZAp">
           <node concept="3cpWsn" id="2rCEsMWSH9E" role="3cpWs9">
             <property role="3TUv4t" value="false" />
-            <property role="TrG5h" value="workflowRepository" />
-            <node concept="3uibUv" id="2rCEsMX1yO8" role="1tU5fm">
-              <ref role="3uigEE" to="caaz:7_bkmIAGex9" resolve="ProcessInstanceRepository" />
+            <property role="TrG5h" value="processInstanceRepository" />
+            <node concept="3uibUv" id="2BnoH1SPkNG" role="1tU5fm">
+              <ref role="3uigEE" to="z1ni:7_bkmIAGex9" resolve="ProcessInstanceRepository" />
             </node>
             <node concept="2ShNRf" id="2rCEsMX1zky" role="33vP2m">
               <node concept="1pGfFk" id="2rCEsMX1zkz" role="2ShVmc">
-                <ref role="37wK5l" to="caaz:2rCEsMX1lN5" resolve="ProcessInstanceRepository" />
+                <ref role="37wK5l" to="z1ni:2rCEsMX1lN5" resolve="ProcessInstanceRepository" />
                 <node concept="37vLTw" id="2rCEsMWSH9I" role="37wK5m">
                   <ref role="3cqZAo" node="6YrIhiElnHw" resolve="entityManager" />
                 </node>
@@ -1495,10 +1499,10 @@
             </node>
             <node concept="2OqwBi" id="2rCEsMWSHaw" role="37vLTx">
               <node concept="37vLTw" id="2rCEsMWSHav" role="2Oq$k0">
-                <ref role="3cqZAo" node="2rCEsMWSH9E" resolve="workflowRepository" />
+                <ref role="3cqZAo" node="2rCEsMWSH9E" resolve="processInstanceRepository" />
               </node>
               <node concept="liA8E" id="2rCEsMWSHax" role="2OqNvi">
-                <ref role="37wK5l" to="caaz:7_bkmIAGexG" resolve="listWorkflowProcessInstancesByProcessId" />
+                <ref role="37wK5l" to="z1ni:7_bkmIAGexG" resolve="listWorkflowProcessInstancesByWorkflowProcessCompositeKey" />
                 <node concept="37vLTw" id="2rCEsMX7IZC" role="37wK5m">
                   <ref role="3cqZAo" node="2rCEsMX1qOr" resolve="workflowProcessKey" />
                 </node>
@@ -1538,8 +1542,609 @@
       <node concept="3cqZAl" id="2rCEsMWSHa9" role="3clF45" />
     </node>
     <node concept="2tJIrI" id="2rCEsMWSGUq" role="jymVt" />
+    <node concept="3clFb_" id="2BnoH1SPoY7" role="jymVt">
+      <property role="TrG5h" value="testProcessInstanceService_ListProcessInstancesByWorkflowProcessCompositeKey" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="2AHcQZ" id="2BnoH1SPoY8" role="2AJF6D">
+        <ref role="2AI5Lk" to="8vib:~Test" resolve="Test" />
+      </node>
+      <node concept="3clFbS" id="2BnoH1SPoY9" role="3clF47">
+        <node concept="3cpWs8" id="2BnoH1SPoYa" role="3cqZAp">
+          <node concept="3cpWsn" id="2BnoH1SPoYb" role="3cpWs9">
+            <property role="3TUv4t" value="false" />
+            <property role="TrG5h" value="resultList" />
+            <node concept="3uibUv" id="2BnoH1SPoYc" role="1tU5fm">
+              <ref role="3uigEE" to="k7g3:~List" resolve="List" />
+              <node concept="3uibUv" id="2BnoH1SPoYd" role="11_B2D">
+                <ref role="3uigEE" to="2ik8:2BnoH1SOvj5" resolve="ProcessInstance" />
+              </node>
+            </node>
+            <node concept="2ShNRf" id="2BnoH1SPoYe" role="33vP2m">
+              <node concept="1pGfFk" id="2BnoH1SPoYf" role="2ShVmc">
+                <ref role="37wK5l" to="k7g3:~ArrayList.&lt;init&gt;()" resolve="ArrayList" />
+                <node concept="3uibUv" id="2BnoH1SPoYg" role="1pMfVU">
+                  <ref role="3uigEE" to="2ik8:2BnoH1SOvj5" resolve="ProcessInstance" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2BnoH1SPoYh" role="3cqZAp" />
+        <node concept="3SKdUt" id="2BnoH1SPoYi" role="3cqZAp">
+          <node concept="3SKdUq" id="2BnoH1SPoYj" role="3SKWNk">
+            <property role="3SKdUp" value="Key des Process" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="2BnoH1SPoYk" role="3cqZAp">
+          <node concept="3cpWsn" id="2BnoH1SPoYl" role="3cpWs9">
+            <property role="TrG5h" value="workflowProcessKey" />
+            <node concept="GJnN5" id="2BnoH1SPoYm" role="1tU5fm">
+              <ref role="GJnN6" to="me44:7_bkmIAFgPj" resolve="WorkflowProcessCompositeKey" />
+            </node>
+            <node concept="2ShNRf" id="2BnoH1SPoYn" role="33vP2m">
+              <node concept="HV5vD" id="2BnoH1SPoYo" role="2ShVmc">
+                <ref role="HV5vE" to="me44:7_bkmIAFh6N" resolve="WorkflowProcess.WorkflowProcessCompositeKey" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2BnoH1SPoYp" role="3cqZAp">
+          <node concept="37vLTI" id="2BnoH1SPoYq" role="3clFbG">
+            <node concept="2OqwBi" id="2BnoH1SPoYs" role="37vLTJ">
+              <node concept="37vLTw" id="2BnoH1SPoYt" role="2Oq$k0">
+                <ref role="3cqZAo" node="2BnoH1SPoYl" resolve="workflowProcessKey" />
+              </node>
+              <node concept="GJxQI" id="2BnoH1SPoYu" role="2OqNvi">
+                <ref role="GJxQD" to="me44:7_bkmIAFh6S" resolve="idNumber" />
+              </node>
+            </node>
+            <node concept="3cmrfG" id="2BnoH1SPPvy" role="37vLTx">
+              <property role="3cmrfH" value="6" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="2BnoH1SPoYv" role="3cqZAp">
+          <node concept="3cpWsn" id="2BnoH1SPoYw" role="3cpWs9">
+            <property role="TrG5h" value="version" />
+            <node concept="10N3zO" id="2BnoH1SPoYx" role="1tU5fm" />
+            <node concept="3cmrfG" id="2BnoH1SPoYy" role="33vP2m">
+              <property role="3cmrfH" value="1" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2BnoH1SPoYz" role="3cqZAp">
+          <node concept="37vLTI" id="2BnoH1SPoY$" role="3clFbG">
+            <node concept="2OqwBi" id="2BnoH1SPoY_" role="37vLTJ">
+              <node concept="37vLTw" id="2BnoH1SPoYA" role="2Oq$k0">
+                <ref role="3cqZAo" node="2BnoH1SPoYl" resolve="workflowProcessKey" />
+              </node>
+              <node concept="GJxQI" id="2BnoH1SPoYB" role="2OqNvi">
+                <ref role="GJxQD" to="me44:7_bkmIAFh6V" resolve="version" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="2BnoH1SPoYC" role="37vLTx">
+              <ref role="3cqZAo" node="2BnoH1SPoYw" resolve="version" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2BnoH1SPoYD" role="3cqZAp" />
+        <node concept="3cpWs8" id="2BnoH1SPoYE" role="3cqZAp">
+          <node concept="3cpWsn" id="2BnoH1SPoYF" role="3cpWs9">
+            <property role="3TUv4t" value="false" />
+            <property role="TrG5h" value="dialogHeader" />
+            <node concept="3uibUv" id="2BnoH1SPoYG" role="1tU5fm">
+              <ref role="3uigEE" to="18oj:2rCEsMWRHrQ" resolve="DialogHeader" />
+            </node>
+            <node concept="2ShNRf" id="2BnoH1SPoYH" role="33vP2m">
+              <node concept="1pGfFk" id="2BnoH1SPoYI" role="2ShVmc">
+                <ref role="37wK5l" to="18oj:2rCEsMWSjNs" resolve="DialogHeader" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2BnoH1SPoYJ" role="3cqZAp">
+          <node concept="37vLTI" id="2BnoH1SPoYK" role="3clFbG">
+            <node concept="Xl_RD" id="2BnoH1SPoYL" role="37vLTx">
+              <property role="Xl_RC" value="B" />
+            </node>
+            <node concept="2OqwBi" id="2BnoH1SPoYM" role="37vLTJ">
+              <node concept="37vLTw" id="2BnoH1SPoYN" role="2Oq$k0">
+                <ref role="3cqZAo" node="2BnoH1SPoYF" resolve="dialogHeader" />
+              </node>
+              <node concept="GJxQI" id="2BnoH1SPoYO" role="2OqNvi">
+                <ref role="GJxQD" to="18oj:2rCEsMWRHrS" resolve="client" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2BnoH1SPoYP" role="3cqZAp" />
+        <node concept="3cpWs8" id="2BnoH1SPoYQ" role="3cqZAp">
+          <node concept="3cpWsn" id="2BnoH1SPoYR" role="3cpWs9">
+            <property role="3TUv4t" value="false" />
+            <property role="TrG5h" value="processInstanceService" />
+            <node concept="3uibUv" id="2BnoH1SPqB5" role="1tU5fm">
+              <ref role="3uigEE" to="43eo:2BnoH1SP42V" resolve="ProcessInstanceService" />
+            </node>
+            <node concept="2ShNRf" id="2BnoH1SPoYT" role="33vP2m">
+              <node concept="1pGfFk" id="2BnoH1SPoYU" role="2ShVmc">
+                <ref role="37wK5l" to="43eo:2rCEsMX1lN5" resolve="ProcessInstanceService" />
+                <node concept="37vLTw" id="2BnoH1SPoYV" role="37wK5m">
+                  <ref role="3cqZAo" node="6YrIhiElnHw" resolve="entityManager" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2BnoH1SPoYW" role="3cqZAp">
+          <node concept="37vLTI" id="2BnoH1SPoYX" role="3clFbG">
+            <node concept="37vLTw" id="2BnoH1SPoYY" role="37vLTJ">
+              <ref role="3cqZAo" node="2BnoH1SPoYb" resolve="resultList" />
+            </node>
+            <node concept="2OqwBi" id="2BnoH1SPoYZ" role="37vLTx">
+              <node concept="37vLTw" id="2BnoH1SPoZ0" role="2Oq$k0">
+                <ref role="3cqZAo" node="2BnoH1SPoYR" resolve="processInstanceService" />
+              </node>
+              <node concept="liA8E" id="2BnoH1SPoZ1" role="2OqNvi">
+                <ref role="37wK5l" to="43eo:2BnoH1SP502" resolve="listProcessInstancesByWorkflowProcessCompositeKey" />
+                <node concept="37vLTw" id="2BnoH1SPoZ2" role="37wK5m">
+                  <ref role="3cqZAo" node="2BnoH1SPoYl" resolve="workflowProcessKey" />
+                </node>
+                <node concept="37vLTw" id="2BnoH1SPoZ3" role="37wK5m">
+                  <ref role="3cqZAo" node="2BnoH1SPoYF" resolve="dialogHeader" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2BnoH1SPoZ4" role="3cqZAp">
+          <node concept="2OqwBi" id="2BnoH1SPoZ5" role="3clFbG">
+            <node concept="10M0yZ" id="2BnoH1SPoZ6" role="2Oq$k0">
+              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="2BnoH1SPoZ7" role="2OqNvi">
+              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="3cpWs3" id="2BnoH1SPoZ8" role="37wK5m">
+                <node concept="Xl_RD" id="2BnoH1SPoZ9" role="3uHU7B">
+                  <property role="Xl_RC" value="Size of ResultList: " />
+                </node>
+                <node concept="2OqwBi" id="2BnoH1SPoZa" role="3uHU7w">
+                  <node concept="37vLTw" id="2BnoH1SPoZb" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2BnoH1SPoYb" resolve="resultList" />
+                  </node>
+                  <node concept="liA8E" id="2BnoH1SPoZc" role="2OqNvi">
+                    <ref role="37wK5l" to="k7g3:~List.size():int" resolve="size" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="2BnoH1SPoZd" role="1B3o_S" />
+      <node concept="3cqZAl" id="2BnoH1SPoZe" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="2BnoH1SPoQD" role="jymVt" />
     <node concept="3Tm1VV" id="2rCEsMWSGF5" role="1B3o_S" />
     <node concept="3uibUv" id="2rCEsMWSGSA" role="1zkMxy">
+      <ref role="3uigEE" node="6YrIhiElh_L" resolve="TestBase" />
+    </node>
+  </node>
+  <node concept="312cEu" id="2BnoH1SPzzH">
+    <property role="TrG5h" value="WorkflowProcessTest" />
+    <node concept="3clFb_" id="2BnoH1SPzzI" role="jymVt">
+      <property role="TrG5h" value="test" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="2AHcQZ" id="2BnoH1SPzzJ" role="2AJF6D">
+        <ref role="2AI5Lk" to="8vib:~Test" resolve="Test" />
+      </node>
+      <node concept="3clFbS" id="2BnoH1SPzzK" role="3clF47">
+        <node concept="3SKdUt" id="2BnoH1SPzzL" role="3cqZAp">
+          <node concept="3SKdUq" id="2BnoH1SPzzM" role="3SKWNk">
+            <property role="3SKdUp" value="TODO testing " />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="2BnoH1SPzzN" role="1B3o_S" />
+      <node concept="3cqZAl" id="2BnoH1SPzzO" role="3clF45" />
+    </node>
+    <node concept="3clFb_" id="2BnoH1SPzzP" role="jymVt">
+      <property role="TrG5h" value="testWorkflowProcessRepository_FindWorkflowProcessByWorkflowProcessCompositeKey" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="2AHcQZ" id="2BnoH1SPzzQ" role="2AJF6D">
+        <ref role="2AI5Lk" to="8vib:~Test" resolve="Test" />
+      </node>
+      <node concept="3clFbS" id="2BnoH1SPzzR" role="3clF47">
+        <node concept="3cpWs8" id="2BnoH1SPCt6" role="3cqZAp">
+          <node concept="3cpWsn" id="2BnoH1SPCt7" role="3cpWs9">
+            <property role="TrG5h" value="workflowProcess" />
+            <node concept="3uibUv" id="2BnoH1SPCt8" role="1tU5fm">
+              <ref role="3uigEE" to="me44:7_bkmIAFgHL" resolve="WorkflowProcess" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2BnoH1SPzzZ" role="3cqZAp" />
+        <node concept="3SKdUt" id="2BnoH1SPz$0" role="3cqZAp">
+          <node concept="3SKdUq" id="2BnoH1SPz$1" role="3SKWNk">
+            <property role="3SKdUp" value="Key des Process" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="2BnoH1SPz$2" role="3cqZAp">
+          <node concept="3cpWsn" id="2BnoH1SPz$3" role="3cpWs9">
+            <property role="TrG5h" value="workflowProcessKey" />
+            <node concept="GJnN5" id="2BnoH1SPz$4" role="1tU5fm">
+              <ref role="GJnN6" to="me44:7_bkmIAFgPj" resolve="WorkflowProcessCompositeKey" />
+            </node>
+            <node concept="2ShNRf" id="2BnoH1SPz$5" role="33vP2m">
+              <node concept="HV5vD" id="2BnoH1SPz$6" role="2ShVmc">
+                <ref role="HV5vE" to="me44:7_bkmIAFh6N" resolve="WorkflowProcess.WorkflowProcessCompositeKey" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2BnoH1SPz$7" role="3cqZAp">
+          <node concept="37vLTI" id="2BnoH1SPz$8" role="3clFbG">
+            <node concept="2OqwBi" id="2BnoH1SPz$a" role="37vLTJ">
+              <node concept="37vLTw" id="2BnoH1SPz$b" role="2Oq$k0">
+                <ref role="3cqZAo" node="2BnoH1SPz$3" resolve="workflowProcessKey" />
+              </node>
+              <node concept="GJxQI" id="2BnoH1SPz$c" role="2OqNvi">
+                <ref role="GJxQD" to="me44:7_bkmIAFh6S" resolve="idNumber" />
+              </node>
+            </node>
+            <node concept="3cmrfG" id="2BnoH1SPOgO" role="37vLTx">
+              <property role="3cmrfH" value="6" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="2BnoH1SPz$d" role="3cqZAp">
+          <node concept="3cpWsn" id="2BnoH1SPz$e" role="3cpWs9">
+            <property role="TrG5h" value="version" />
+            <node concept="10N3zO" id="2BnoH1SPz$f" role="1tU5fm" />
+            <node concept="3cmrfG" id="2BnoH1SPz$g" role="33vP2m">
+              <property role="3cmrfH" value="1" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2BnoH1SPz$h" role="3cqZAp">
+          <node concept="37vLTI" id="2BnoH1SPz$i" role="3clFbG">
+            <node concept="2OqwBi" id="2BnoH1SPz$j" role="37vLTJ">
+              <node concept="37vLTw" id="2BnoH1SPz$k" role="2Oq$k0">
+                <ref role="3cqZAo" node="2BnoH1SPz$3" resolve="workflowProcessKey" />
+              </node>
+              <node concept="GJxQI" id="2BnoH1SPz$l" role="2OqNvi">
+                <ref role="GJxQD" to="me44:7_bkmIAFh6V" resolve="version" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="2BnoH1SPz$m" role="37vLTx">
+              <ref role="3cqZAo" node="2BnoH1SPz$e" resolve="version" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2BnoH1SPz$n" role="3cqZAp" />
+        <node concept="3cpWs8" id="2BnoH1SPz$o" role="3cqZAp">
+          <node concept="3cpWsn" id="2BnoH1SPz$p" role="3cpWs9">
+            <property role="3TUv4t" value="false" />
+            <property role="TrG5h" value="dialogHeader" />
+            <node concept="3uibUv" id="2BnoH1SPz$q" role="1tU5fm">
+              <ref role="3uigEE" to="18oj:2rCEsMWRHrQ" resolve="DialogHeader" />
+            </node>
+            <node concept="2ShNRf" id="2BnoH1SPz$r" role="33vP2m">
+              <node concept="1pGfFk" id="2BnoH1SPz$s" role="2ShVmc">
+                <ref role="37wK5l" to="18oj:2rCEsMWSjNs" resolve="DialogHeader" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2BnoH1SPz$t" role="3cqZAp">
+          <node concept="37vLTI" id="2BnoH1SPz$u" role="3clFbG">
+            <node concept="Xl_RD" id="2BnoH1SPz$v" role="37vLTx">
+              <property role="Xl_RC" value="B" />
+            </node>
+            <node concept="2OqwBi" id="2BnoH1SPz$w" role="37vLTJ">
+              <node concept="37vLTw" id="2BnoH1SPz$x" role="2Oq$k0">
+                <ref role="3cqZAo" node="2BnoH1SPz$p" resolve="dialogHeader" />
+              </node>
+              <node concept="GJxQI" id="2BnoH1SPz$y" role="2OqNvi">
+                <ref role="GJxQD" to="18oj:2rCEsMWRHrS" resolve="client" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2BnoH1SPz$z" role="3cqZAp" />
+        <node concept="3cpWs8" id="2BnoH1SPz$$" role="3cqZAp">
+          <node concept="3cpWsn" id="2BnoH1SPz$_" role="3cpWs9">
+            <property role="3TUv4t" value="false" />
+            <property role="TrG5h" value="workflowProcessRepository" />
+            <node concept="3uibUv" id="2BnoH1SPD8w" role="1tU5fm">
+              <ref role="3uigEE" to="caaz:7_bkmIAGex9" resolve="WorkflowProcessRepository" />
+            </node>
+            <node concept="2ShNRf" id="2BnoH1SPz$B" role="33vP2m">
+              <node concept="1pGfFk" id="2BnoH1SPz$C" role="2ShVmc">
+                <ref role="37wK5l" to="caaz:2rCEsMX1lN5" resolve="WorkflowProcessRepository" />
+                <node concept="37vLTw" id="2BnoH1SPz$D" role="37wK5m">
+                  <ref role="3cqZAo" node="6YrIhiElnHw" resolve="entityManager" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2BnoH1SPz$E" role="3cqZAp">
+          <node concept="37vLTI" id="2BnoH1SPz$F" role="3clFbG">
+            <node concept="37vLTw" id="2BnoH1SPDPo" role="37vLTJ">
+              <ref role="3cqZAo" node="2BnoH1SPCt7" resolve="workflowProcess" />
+            </node>
+            <node concept="2OqwBi" id="2BnoH1SPz$H" role="37vLTx">
+              <node concept="37vLTw" id="2BnoH1SPz$I" role="2Oq$k0">
+                <ref role="3cqZAo" node="2BnoH1SPz$_" resolve="workflowProcessRepository" />
+              </node>
+              <node concept="liA8E" id="2BnoH1SPz$J" role="2OqNvi">
+                <ref role="37wK5l" to="caaz:2rCEsMWS2Zt" resolve="findWorkflowProcessByCompositeKey" />
+                <node concept="37vLTw" id="2BnoH1SPz$K" role="37wK5m">
+                  <ref role="3cqZAo" node="2BnoH1SPz$3" resolve="workflowProcessKey" />
+                </node>
+                <node concept="37vLTw" id="2BnoH1SPz$L" role="37wK5m">
+                  <ref role="3cqZAo" node="2BnoH1SPz$p" resolve="dialogHeader" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2BnoH1SPF$s" role="3cqZAp">
+          <node concept="2OqwBi" id="2BnoH1SPF$t" role="3clFbG">
+            <node concept="10M0yZ" id="2BnoH1SPF$u" role="2Oq$k0">
+              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="2BnoH1SPF$v" role="2OqNvi">
+              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="2BnoH1SPF$w" role="37wK5m">
+                <property role="Xl_RC" value="\n\n\n" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2BnoH1SPF$z" role="3cqZAp">
+          <node concept="2OqwBi" id="2BnoH1SPF$$" role="3clFbG">
+            <node concept="10M0yZ" id="2BnoH1SPF$_" role="2Oq$k0">
+              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="2BnoH1SPF$A" role="2OqNvi">
+              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="3cpWs3" id="2BnoH1SPF$B" role="37wK5m">
+                <node concept="37vLTw" id="2BnoH1SPFTz" role="3uHU7w">
+                  <ref role="3cqZAo" node="2BnoH1SPCt7" resolve="workflowProcess" />
+                </node>
+                <node concept="Xl_RD" id="2BnoH1SPF$D" role="3uHU7B">
+                  <property role="Xl_RC" value="Workflow Process " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2BnoH1SPF$G" role="3cqZAp" />
+        <node concept="3clFbF" id="2BnoH1SPF$H" role="3cqZAp">
+          <node concept="2OqwBi" id="2BnoH1SPF$I" role="3clFbG">
+            <node concept="10M0yZ" id="2BnoH1SPF$J" role="2Oq$k0">
+              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="2BnoH1SPF$K" role="2OqNvi">
+              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="2BnoH1SPF$L" role="37wK5m">
+                <property role="Xl_RC" value="\n\n\n" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2BnoH1SPFti" role="3cqZAp" />
+      </node>
+      <node concept="3Tm1VV" id="2BnoH1SPz$V" role="1B3o_S" />
+      <node concept="3cqZAl" id="2BnoH1SPz$W" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="2BnoH1SPz$X" role="jymVt" />
+    <node concept="3clFb_" id="2BnoH1SPGDn" role="jymVt">
+      <property role="TrG5h" value="testWorkflowProcessService_FindWorkflowProcessByWorkflowProcessCompositeKey" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="2AHcQZ" id="2BnoH1SPGDo" role="2AJF6D">
+        <ref role="2AI5Lk" to="8vib:~Test" resolve="Test" />
+      </node>
+      <node concept="3clFbS" id="2BnoH1SPGDp" role="3clF47">
+        <node concept="3cpWs8" id="2BnoH1SPGDq" role="3cqZAp">
+          <node concept="3cpWsn" id="2BnoH1SPGDr" role="3cpWs9">
+            <property role="TrG5h" value="workflowProcess" />
+            <node concept="3uibUv" id="2BnoH1SPGDs" role="1tU5fm">
+              <ref role="3uigEE" to="me44:7_bkmIAFgHL" resolve="WorkflowProcess" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2BnoH1SPGDt" role="3cqZAp" />
+        <node concept="3SKdUt" id="2BnoH1SPGDu" role="3cqZAp">
+          <node concept="3SKdUq" id="2BnoH1SPGDv" role="3SKWNk">
+            <property role="3SKdUp" value="Key des Process" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="2BnoH1SPGDw" role="3cqZAp">
+          <node concept="3cpWsn" id="2BnoH1SPGDx" role="3cpWs9">
+            <property role="TrG5h" value="workflowProcessKey" />
+            <node concept="GJnN5" id="2BnoH1SPGDy" role="1tU5fm">
+              <ref role="GJnN6" to="me44:7_bkmIAFgPj" resolve="WorkflowProcessCompositeKey" />
+            </node>
+            <node concept="2ShNRf" id="2BnoH1SPGDz" role="33vP2m">
+              <node concept="HV5vD" id="2BnoH1SPGD$" role="2ShVmc">
+                <ref role="HV5vE" to="me44:7_bkmIAFh6N" resolve="WorkflowProcess.WorkflowProcessCompositeKey" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2BnoH1SPGD_" role="3cqZAp">
+          <node concept="37vLTI" id="2BnoH1SPGDA" role="3clFbG">
+            <node concept="2OqwBi" id="2BnoH1SPGDC" role="37vLTJ">
+              <node concept="37vLTw" id="2BnoH1SPGDD" role="2Oq$k0">
+                <ref role="3cqZAo" node="2BnoH1SPGDx" resolve="workflowProcessKey" />
+              </node>
+              <node concept="GJxQI" id="2BnoH1SPGDE" role="2OqNvi">
+                <ref role="GJxQD" to="me44:7_bkmIAFh6S" resolve="idNumber" />
+              </node>
+            </node>
+            <node concept="3cmrfG" id="2BnoH1SPNUq" role="37vLTx">
+              <property role="3cmrfH" value="6" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="2BnoH1SPGDF" role="3cqZAp">
+          <node concept="3cpWsn" id="2BnoH1SPGDG" role="3cpWs9">
+            <property role="TrG5h" value="version" />
+            <node concept="10N3zO" id="2BnoH1SPGDH" role="1tU5fm" />
+            <node concept="3cmrfG" id="2BnoH1SPGDI" role="33vP2m">
+              <property role="3cmrfH" value="1" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2BnoH1SPGDJ" role="3cqZAp">
+          <node concept="37vLTI" id="2BnoH1SPGDK" role="3clFbG">
+            <node concept="2OqwBi" id="2BnoH1SPGDL" role="37vLTJ">
+              <node concept="37vLTw" id="2BnoH1SPGDM" role="2Oq$k0">
+                <ref role="3cqZAo" node="2BnoH1SPGDx" resolve="workflowProcessKey" />
+              </node>
+              <node concept="GJxQI" id="2BnoH1SPGDN" role="2OqNvi">
+                <ref role="GJxQD" to="me44:7_bkmIAFh6V" resolve="version" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="2BnoH1SPGDO" role="37vLTx">
+              <ref role="3cqZAo" node="2BnoH1SPGDG" resolve="version" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2BnoH1SPGDP" role="3cqZAp" />
+        <node concept="3cpWs8" id="2BnoH1SPGDQ" role="3cqZAp">
+          <node concept="3cpWsn" id="2BnoH1SPGDR" role="3cpWs9">
+            <property role="3TUv4t" value="false" />
+            <property role="TrG5h" value="dialogHeader" />
+            <node concept="3uibUv" id="2BnoH1SPGDS" role="1tU5fm">
+              <ref role="3uigEE" to="18oj:2rCEsMWRHrQ" resolve="DialogHeader" />
+            </node>
+            <node concept="2ShNRf" id="2BnoH1SPGDT" role="33vP2m">
+              <node concept="1pGfFk" id="2BnoH1SPGDU" role="2ShVmc">
+                <ref role="37wK5l" to="18oj:2rCEsMWSjNs" resolve="DialogHeader" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2BnoH1SPGDV" role="3cqZAp">
+          <node concept="37vLTI" id="2BnoH1SPGDW" role="3clFbG">
+            <node concept="Xl_RD" id="2BnoH1SPGDX" role="37vLTx">
+              <property role="Xl_RC" value="B" />
+            </node>
+            <node concept="2OqwBi" id="2BnoH1SPGDY" role="37vLTJ">
+              <node concept="37vLTw" id="2BnoH1SPGDZ" role="2Oq$k0">
+                <ref role="3cqZAo" node="2BnoH1SPGDR" resolve="dialogHeader" />
+              </node>
+              <node concept="GJxQI" id="2BnoH1SPGE0" role="2OqNvi">
+                <ref role="GJxQD" to="18oj:2rCEsMWRHrS" resolve="client" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2BnoH1SPGE1" role="3cqZAp" />
+        <node concept="3cpWs8" id="2BnoH1SPIqW" role="3cqZAp">
+          <node concept="3cpWsn" id="2BnoH1SPIqX" role="3cpWs9">
+            <property role="TrG5h" value="workflowProcessService" />
+            <node concept="3uibUv" id="2BnoH1SPIqY" role="1tU5fm">
+              <ref role="3uigEE" to="5dng:2BnoH1SP42V" resolve="WorkflowProcessService" />
+            </node>
+            <node concept="2ShNRf" id="2BnoH1SPIA5" role="33vP2m">
+              <node concept="1pGfFk" id="2BnoH1SPJti" role="2ShVmc">
+                <ref role="37wK5l" to="5dng:2rCEsMX1lN5" resolve="WorkflowProcessService" />
+                <node concept="37vLTw" id="2BnoH1SPJy5" role="37wK5m">
+                  <ref role="3cqZAo" node="6YrIhiElnHw" resolve="entityManager" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2BnoH1SPGE8" role="3cqZAp">
+          <node concept="37vLTI" id="2BnoH1SPGE9" role="3clFbG">
+            <node concept="37vLTw" id="2BnoH1SPGEa" role="37vLTJ">
+              <ref role="3cqZAo" node="2BnoH1SPGDr" resolve="workflowProcess" />
+            </node>
+            <node concept="2OqwBi" id="2BnoH1SPGEb" role="37vLTx">
+              <node concept="37vLTw" id="2BnoH1SPJKt" role="2Oq$k0">
+                <ref role="3cqZAo" node="2BnoH1SPIqX" resolve="workflowProcessService" />
+              </node>
+              <node concept="liA8E" id="2BnoH1SPGEd" role="2OqNvi">
+                <ref role="37wK5l" to="5dng:2BnoH1SP502" resolve="findWorkflowProcessByWorkflowProcessCompositeKey" />
+                <node concept="37vLTw" id="2BnoH1SPGEe" role="37wK5m">
+                  <ref role="3cqZAo" node="2BnoH1SPGDx" resolve="workflowProcessKey" />
+                </node>
+                <node concept="37vLTw" id="2BnoH1SPGEf" role="37wK5m">
+                  <ref role="3cqZAo" node="2BnoH1SPGDR" resolve="dialogHeader" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2BnoH1SPGEg" role="3cqZAp">
+          <node concept="2OqwBi" id="2BnoH1SPGEh" role="3clFbG">
+            <node concept="10M0yZ" id="2BnoH1SPGEi" role="2Oq$k0">
+              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="2BnoH1SPGEj" role="2OqNvi">
+              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="2BnoH1SPGEk" role="37wK5m">
+                <property role="Xl_RC" value="\n\n\n" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2BnoH1SPGEl" role="3cqZAp">
+          <node concept="2OqwBi" id="2BnoH1SPGEm" role="3clFbG">
+            <node concept="10M0yZ" id="2BnoH1SPGEn" role="2Oq$k0">
+              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+            </node>
+            <node concept="liA8E" id="2BnoH1SPGEo" role="2OqNvi">
+              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="3cpWs3" id="2BnoH1SPGEp" role="37wK5m">
+                <node concept="37vLTw" id="2BnoH1SPGEq" role="3uHU7w">
+                  <ref role="3cqZAo" node="2BnoH1SPGDr" resolve="workflowProcess" />
+                </node>
+                <node concept="Xl_RD" id="2BnoH1SPGEr" role="3uHU7B">
+                  <property role="Xl_RC" value="Workflow Process " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2BnoH1SPGEs" role="3cqZAp" />
+        <node concept="3clFbF" id="2BnoH1SPGEt" role="3cqZAp">
+          <node concept="2OqwBi" id="2BnoH1SPGEu" role="3clFbG">
+            <node concept="10M0yZ" id="2BnoH1SPGEv" role="2Oq$k0">
+              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+            </node>
+            <node concept="liA8E" id="2BnoH1SPGEw" role="2OqNvi">
+              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="2BnoH1SPGEx" role="37wK5m">
+                <property role="Xl_RC" value="\n\n\n" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2BnoH1SPGEy" role="3cqZAp" />
+      </node>
+      <node concept="3Tm1VV" id="2BnoH1SPGEz" role="1B3o_S" />
+      <node concept="3cqZAl" id="2BnoH1SPGE$" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="2BnoH1SPzA6" role="jymVt" />
+    <node concept="3Tm1VV" id="2BnoH1SPzA7" role="1B3o_S" />
+    <node concept="3uibUv" id="2BnoH1SPzA8" role="1zkMxy">
       <ref role="3uigEE" node="6YrIhiElh_L" resolve="TestBase" />
     </node>
   </node>

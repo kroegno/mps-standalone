@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:19bfac2d-6c1a-4165-a425-e1dedad0ffa5(com.hlag.mpsstandalone.security.domain)">
+<model ref="r:19bfac2d-6c1a-4165-a425-e1dedad0ffa5(com.hlag.security.domain)">
   <persistence version="9" />
   <languages>
     <use id="5f362b6a-7593-4d33-922a-7554535c0063" name="com.hlag.entitylang" version="-1" />
@@ -43,7 +43,6 @@
       </concept>
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
-        <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
       <concept id="7812454656619025416" name="jetbrains.mps.baseLanguage.structure.MethodDeclaration" flags="ng" index="1rXfSm">
@@ -70,12 +69,10 @@
       <concept id="1517936465229704644" name="com.hlag.entitylang.structure.Entity" flags="ig" index="GG2rC">
         <child id="1517936465229753279" name="fields" index="GGm2j" />
         <child id="2422139682377930270" name="jpaAnnotations" index="1_7FOF" />
-        <child id="2996449965958882244" name="entityKey" index="1DC6iq" />
       </concept>
       <concept id="1517936465229731317" name="com.hlag.entitylang.structure.Field" flags="ng" index="GGpVp">
         <child id="1517936465230545536" name="type" index="GJgAG" />
       </concept>
-      <concept id="1517936465230542871" name="com.hlag.entitylang.structure.IFieldType" flags="ng" index="GJncV" />
       <concept id="1517936465230542567" name="com.hlag.entitylang.structure.FieldTypeDeclaration" flags="ng" index="GJnRb">
         <child id="1517936465230542570" name="subType" index="GJnR6" />
       </concept>
@@ -89,9 +86,6 @@
       <concept id="1631019930970554387" name="com.hlag.entitylang.structure.JpaAnnotationValue" flags="ng" index="11HSJJ">
         <reference id="1631019930970738956" name="method" index="11HlFK" />
         <child id="1631019930970738958" name="value" index="11HlFM" />
-      </concept>
-      <concept id="2996449965958866096" name="com.hlag.entitylang.structure.EntityKey" flags="ig" index="1DC2fI">
-        <child id="2996449965958877543" name="fields" index="1DC5oT" />
       </concept>
     </language>
   </registry>
@@ -175,13 +169,6 @@
           <ref role="Rm8GQ" to="8mn1:~AccessType.PROPERTY" resolve="PROPERTY" />
           <ref role="1Px2BO" to="8mn1:~AccessType" resolve="AccessType" />
         </node>
-      </node>
-    </node>
-    <node concept="1DC2fI" id="2rCEsMWXBPv" role="1DC6iq">
-      <property role="2bfB8j" value="true" />
-      <node concept="3Tm1VV" id="2rCEsMWXBPw" role="1B3o_S" />
-      <node concept="GGpVp" id="2rCEsMWXBPx" role="1DC5oT">
-        <node concept="GJncV" id="2rCEsMWXBPy" role="GJgAG" />
       </node>
     </node>
   </node>

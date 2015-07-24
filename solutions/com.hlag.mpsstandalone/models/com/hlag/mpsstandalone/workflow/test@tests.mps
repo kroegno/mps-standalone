@@ -9,7 +9,7 @@
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="1" />
   </languages>
   <imports>
-    <import index="1y2j" ref="r:0757cf2b-b103-4f51-a823-cb7c5109f7bd(com.hlag.mpsstandalone.workflow.test)" />
+    <import index="1y2j" ref="r:0757cf2b-b103-4f51-a823-cb7c5109f7bd(com.hlag.workflow.test.test)" />
   </imports>
   <registry />
 </model>
